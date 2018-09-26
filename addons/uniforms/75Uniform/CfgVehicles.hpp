@@ -67,6 +67,12 @@
 		};
 	};
 
+	class CFP_75th_CRYE_V1b_Full_Clean: CFP_75th_CRYE_V1b_Full {
+		displayName = "Crye MCam Full [Clean]";
+		uniformClass = "CFP_75th_CRYE_V1b_Full_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v1\crye_mcam_v1_co_new_clean.paa"};
+	};
+
 	class CFP_75th_CRYE_V2_Full: B_Soldier_base_F
 	{
 
@@ -100,6 +106,12 @@
 		};
 	};
 
+	class CFP_75th_CRYE_V2_Full_Clean: CFP_75th_CRYE_V2_Full {
+		displayName = "Crye MCam Full II [Clean]";
+		uniformClass = "CFP_75th_CRYE_V2_Full_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v2\crye_mcam_v2_co_clean.paa"};
+	};
+
 	class CFP_75th_CRYE_V2b_Full: B_Soldier_base_F
 	{
 
@@ -131,6 +143,12 @@
 
 
 		};
+	};
+
+	class CFP_75th_CRYE_V2b_Full_Clean: CFP_75th_CRYE_V2b_Full {
+		displayName = "Crye MCam Full II [Clean]";
+		uniformClass = "CFP_75th_CRYE_V2b_Full_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v2\crye_mcam_v2_co_new_clean.paa"};
 	};
 
 	class CFP_75th_CRYE_V3_Full: B_Soldier_base_F
@@ -167,6 +185,12 @@
 		};
 	};
 
+	class CFP_75th_CRYE_V3_Full_Clean: CFP_75th_CRYE_V3_Full {
+		displayName = "Crye MCam Full III [Clean]";
+		uniformClass = "CFP_75th_CRYE_V3_Full_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v3\crye_mcam_v3_co_clean.paa"};
+	};
+
 	class CFP_75th_CRYE_V3b_Full: B_Soldier_base_F
 	{
 
@@ -199,6 +223,12 @@
 
 
 		};
+	};
+
+	class CFP_75th_CRYE_V3b_Full_Clean: CFP_75th_CRYE_V3b_Full {
+		displayName = "Crye MCam Full III [Clean]";
+		uniformClass = "CFP_75th_CRYE_V3b_Full_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v3\crye_mcam_v3_co_new_clean.paa"};
 	};
 
 	class CFP_75th_CRYE_V4_Full: B_Soldier_base_F
@@ -234,6 +264,12 @@
 		};
 	};
 
+	class CFP_75th_CRYE_V4_Full_Clean: CFP_75th_CRYE_V4_Full {
+		displayName = "Crye MCam Full IV [Clean]";
+		uniformClass = "CFP_75th_CRYE_V4_Full_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v4\crye_mcam_v4_co_clean.paa"};
+	};
+
 	class CFP_75th_CRYE_V4b_Full: B_Soldier_base_F
 	{
 
@@ -265,6 +301,12 @@
 
 
 		};
+	};
+
+	class CFP_75th_CRYE_V4b_Full_Clean: CFP_75th_CRYE_V4b_Full {
+		displayName = "Crye MCam Full IV [Clean]";
+		uniformClass = "CFP_75th_CRYE_V4b_Full_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v4\crye_mcam_v4_co_new_clean.paa"};
 	};
 
 	////////////////////////////////////UNIFORMS/ROLLED/SLEEVE////////////////////////////////////
@@ -337,6 +379,12 @@
 		};
 	};
 
+	class CFP_75th_CRYE_V1b_Sleeved_Clean: CFP_75th_CRYE_V1b_Sleeved {
+		displayName = "Crye MCam Rolled [Clean]";
+		uniformClass = "CFP_75th_CRYE_V1b_Sleeved_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v1\crye_mcam_v1_co_new_clean.paa"};
+	};
+
 	class CFP_75th_CRYE_V2_Sleeved: B_Soldier_base_F
 	{
 
@@ -369,6 +417,12 @@
 		};
 	};
 
+	class CFP_75th_CRYE_V2_Sleeved_Clean: CFP_75th_CRYE_V2_Sleeved {
+		displayName = "Crye MCam Rolled II [Clean]";
+		uniformClass = "CFP_75th_CRYE_V2_Sleeved_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v2\crye_mcam_v2_co_clean.paa"};
+	};
+
 	class CFP_75th_CRYE_V2b_Sleeved: B_Soldier_base_F
 	{
 
@@ -399,6 +453,12 @@
 			mat[] = {"A3\Characters_F\BLUFOR\Data\clothing1.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\characters_f\common\data\coveralls.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
 
 		};
+	};
+
+	class CFP_75th_CRYE_V2b_Sleeved_Clean: CFP_75th_CRYE_V2b_Sleeved {
+		displayName = "Crye MCam Rolled II [Clean]";
+		uniformClass = "CFP_75th_CRYE_V2b_Sleeved_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v2\crye_mcam_v2_co_new_clean.paa"};
 	};
 
 
@@ -434,6 +494,12 @@
 		};
 	};
 
+	class CFP_75th_CRYE_V3_Sleeved_Clean: CFP_75th_CRYE_V3_Sleeved {
+		displayName = "Crye MCam Rolled III [Clean]";
+		uniformClass = "CFP_75th_CRYE_V3_Sleeved_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v3\crye_mcam_v3_co_clean.paa"};
+	};
+
 	class CFP_75th_CRYE_V3b_Sleeved: B_Soldier_base_F
 	{
 
@@ -464,6 +530,12 @@
 			mat[] = {"A3\Characters_F\BLUFOR\Data\clothing1.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\characters_f\common\data\coveralls.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
 
 		};
+	};
+
+	class CFP_75th_CRYE_V3b_Sleeved_Clean: CFP_75th_CRYE_V3b_Sleeved {
+		displayName = "Crye MCam Rolled III [Clean]";
+		uniformClass = "CFP_75th_CRYE_V3b_Sleeved_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v3\crye_mcam_v3_co_new_clean.paa"};
 	};
 
 
@@ -501,6 +573,12 @@
 		};
 	};
 
+	class CFP_75th_CRYE_V4_Sleeved_Clean: CFP_75th_CRYE_V4_Sleeved {
+		displayName = "Crye MCam Rolled IV [Clean]";
+		uniformClass = "CFP_75th_CRYE_V4_Sleeved_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v4\crye_mcam_v4_co_clean.paa"};
+	};
+
 	class CFP_75th_CRYE_V4b_Sleeved: B_Soldier_base_F
 	{
 
@@ -533,6 +611,12 @@
 
 
 		};
+	};
+
+	class CFP_75th_CRYE_V4b_Sleeved_Clean: CFP_75th_CRYE_V4b_Sleeved {
+		displayName = "Crye MCam Rolled IV [Clean]";
+		uniformClass = "CFP_75th_CRYE_V4b_Sleeved_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v4\crye_mcam_v4_co_new_clean.paa"};
 	};
 
 	////////////////////////////////////UNIFORMS/G3AW////////////////////////////////////
@@ -634,6 +718,12 @@
 		};
 	};
 
+	class CFP_75th_CRYEG3_V2_Clean: CFP_75th_CRYEG3_V2 {
+		displayName = "Crye/G3AW Ranger Green [Clean]";
+		uniformClass = "CFP_75th_CRYEG3_V2_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_g3_mcam_v2\crye_g3_mcam_v2_co_clean.paa"};
+	};
+
 	class CFP_75th_CRYEG3_V2b: B_Soldier_base_F
 	{
 
@@ -664,6 +754,12 @@
 			mat[] = {"A3\Characters_F\BLUFOR\Data\clothing1.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\characters_f\common\data\coveralls.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
 
 		};
+	};
+
+	class CFP_75th_CRYEG3_V2b_Clean: CFP_75th_CRYEG3_V2b {
+		displayName = "Crye/G3AW Ranger Green [Clean]";
+		uniformClass = "CFP_75th_CRYEG3_V2b_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_g3_mcam_v2\crye_g3_mcam_v2_co_new_clean.paa"};
 	};
 
 
@@ -765,6 +861,12 @@
 		};
 	};
 
+	class CFP_75th_CRYEG3_V4_Clean: CFP_75th_CRYEG3_V4 {
+		displayName = "Crye/G3AW MCam [Clean]";
+		uniformClass = "CFP_75th_CRYEG3_V4_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_g3_mcam_v4\crye_g3_mcam_v4_co_clean.paa"};
+	};
+
 	////////////////////////////////////UNIFORMS/TEES////////////////////////////////////
 
 	class CFP_75th_CRYE_Tee: B_Soldier_base_F
@@ -829,6 +931,12 @@
 			mat[] = {"A3\Characters_F\BLUFOR\Data\clothing1.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\characters_f\common\data\coveralls.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
 
 		};
+	};
+
+	class CFP_75th_CRYE_Tee2_Clean: CFP_75th_CRYE_Tee2 {
+		displayName = "Crye MCam Tee [Clean]";
+		uniformClass = "CFP_75th_CRYE_Tee2_Clean";
+		hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v1\crye_mcam_v1_co_new_clean.paa","x\cfp\addons\uniforms\75Uniform\tees\ranger_uwear_co.paa"};
 	};
 
 	////////////////////////////////////UNIFORMS/UNDER/WEAR////////////////////////////////////

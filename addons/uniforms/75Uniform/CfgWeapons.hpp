@@ -38,6 +38,16 @@ class CFP_75th_CRYE_V1b_Full: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYE_V1b_Full_Clean: CFP_75th_CRYE_V1b_Full {
+	displayName = "Crye Multicam Full [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v1\crye_mcam_v1_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V1b_Full_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
 
 class CFP_75th_CRYE_V2_Full: Uniform_Base {
 
@@ -56,6 +66,17 @@ class CFP_75th_CRYE_V2_Full: Uniform_Base {
 					containerClass = "Supply40";
 					mass = 40;
 		};
+};
+
+class CFP_75th_CRYE_V2_Full_Clean: CFP_75th_CRYE_V2_Full {
+	displayName = "Crye Multicam Full II [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v2\crye_mcam_v2_co_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V2_Full_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
 };
 
 class CFP_75th_CRYE_V2b_Full: Uniform_Base {
@@ -77,6 +98,16 @@ class CFP_75th_CRYE_V2b_Full: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYE_V2b_Full_Clean: CFP_75th_CRYE_V2b_Full {
+	displayName = "Crye Multicam Full II [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v2\crye_mcam_v2_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V2b_Full_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
 
 
 
@@ -99,6 +130,17 @@ class CFP_75th_CRYE_V3_Full: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYE_V3_Full_Clean: CFP_75th_CRYE_V3_Full {
+	displayName = "Crye Multicam Full III [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v3\crye_mcam_v3_co_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V3_Full_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+
 class CFP_75th_CRYE_V3b_Full: Uniform_Base {
 
 
@@ -116,6 +158,17 @@ class CFP_75th_CRYE_V3b_Full: Uniform_Base {
 					containerClass = "Supply40";
 					mass = 40;
 		};
+};
+
+class CFP_75th_CRYE_V3b_Full_Clean: CFP_75th_CRYE_V3b_Full {
+	displayName = "Crye Multicam Full III [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v3\crye_mcam_v3_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V3b_Full_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
 };
 
 class CFP_75th_CRYE_V4_Full: Uniform_Base {
@@ -137,6 +190,17 @@ class CFP_75th_CRYE_V4_Full: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYE_V4_Full_Clean: CFP_75th_CRYE_V4_Full {
+	displayName = "Crye Multicam Full IV [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v4\crye_mcam_v4_co_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V4_Full_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+
 class CFP_75th_CRYE_V4b_Full: Uniform_Base {
 
 
@@ -154,6 +218,17 @@ class CFP_75th_CRYE_V4b_Full: Uniform_Base {
 					containerClass = "Supply40";
 					mass = 40;
 		};
+};
+
+class CFP_75th_CRYE_V4b_Full_Clean: CFP_75th_CRYE_V4b_Full {
+	displayName = "Crye Multicam Full IV [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v4\crye_mcam_v4_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V4b_Full_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
 };
 
 
@@ -200,6 +275,17 @@ class CFP_75th_CRYE_V1b_Sleeved: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYE_V1b_Sleeved_Clean: CFP_75th_CRYE_V1b_Sleeved {
+	displayName = "Crye Multicam Rolled [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v1\crye_mcam_v1_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V1b_Sleeved_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+
 
 
 class CFP_75th_CRYE_V2_Sleeved: Uniform_Base {
@@ -222,6 +308,17 @@ class CFP_75th_CRYE_V2_Sleeved: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYE_V2_Sleeved_Clean: CFP_75th_CRYE_V2_Sleeved {
+	displayName = "Crye Multicam Rolled II [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v2\crye_mcam_v2_co_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V2_Sleeved_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+
 class CFP_75th_CRYE_V2b_Sleeved: Uniform_Base {
 
 
@@ -240,6 +337,17 @@ class CFP_75th_CRYE_V2b_Sleeved: Uniform_Base {
 					containerClass = "Supply40";
 					mass = 40;
 		};
+};
+
+class CFP_75th_CRYE_V2b_Sleeved_Clean: CFP_75th_CRYE_V2b_Sleeved {
+	displayName = "Crye Multicam Rolled II [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v2\crye_mcam_v2_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V2b_Sleeved_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
 };
 
 class CFP_75th_CRYE_V3_Sleeved: Uniform_Base {
@@ -262,6 +370,17 @@ class CFP_75th_CRYE_V3_Sleeved: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYE_V3_Sleeved_Clean: CFP_75th_CRYE_V3_Sleeved {
+	displayName = "Crye Multicam Rolled III [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v3\crye_mcam_v3_co_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V3_Sleeved_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+
 class CFP_75th_CRYE_V3b_Sleeved: Uniform_Base {
 
 
@@ -280,6 +399,17 @@ class CFP_75th_CRYE_V3b_Sleeved: Uniform_Base {
 					containerClass = "Supply40";
 					mass = 40;
 		};
+};
+
+class CFP_75th_CRYE_V3b_Sleeved_Clean: CFP_75th_CRYE_V3b_Sleeved {
+	displayName = "Crye Multicam Rolled III [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v3\crye_mcam_v3_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V3b_Sleeved_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
 };
 
 class CFP_75th_CRYE_V4_Sleeved: Uniform_Base {
@@ -302,6 +432,17 @@ class CFP_75th_CRYE_V4_Sleeved: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYE_V4_Sleeved_Clean: CFP_75th_CRYE_V4_Sleeved {
+	displayName = "Crye Multicam Rolled IV [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v4\crye_mcam_v4_co_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V4_Sleeved_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+
 class CFP_75th_CRYE_V4b_Sleeved: Uniform_Base {
 
 
@@ -320,6 +461,17 @@ class CFP_75th_CRYE_V4b_Sleeved: Uniform_Base {
 					containerClass = "Supply40";
 					mass = 40;
 		};
+};
+
+class CFP_75th_CRYE_V4b_Sleeved_Clean: CFP_75th_CRYE_V4b_Sleeved {
+	displayName = "Crye Multicam Rolled IV [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v4\crye_mcam_v4_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_V4b_Sleeved_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
 };
 
 
@@ -387,6 +539,17 @@ class CFP_75th_CRYEG3_V2: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYEG3_V2_Clean: CFP_75th_CRYEG3_V2 {
+	displayName = "Crye/G3AW Ranger Green [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_g3_mcam_v2\crye_g3_mcam_v2_co_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYEG3_V2_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+
 class CFP_75th_CRYEG3_V2b: Uniform_Base {
 
 
@@ -405,6 +568,17 @@ class CFP_75th_CRYEG3_V2b: Uniform_Base {
 					containerClass = "Supply40";
 					mass = 40;
 		};
+};
+
+class CFP_75th_CRYEG3_V2b_Clean: CFP_75th_CRYEG3_V2b {
+	displayName = "Crye/G3AW Ranger Green [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_g3_mcam_v2\crye_g3_mcam_v2_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYEG3_V2b_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
 };
 
 class CFP_75th_CRYEG3_V3: Uniform_Base {
@@ -467,6 +641,17 @@ class CFP_75th_CRYEG3_V4: Uniform_Base {
 		};
 };
 
+class CFP_75th_CRYEG3_V4_Clean: CFP_75th_CRYEG3_V4 {
+	displayName = "Crye/G3AW Multicam [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_g3_mcam_v4\crye_g3_mcam_v4_co_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYEG3_V4_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+
 
 
 ////////////////////////////////////UNIFORMS/TEES////////////////////////////////////
@@ -510,6 +695,17 @@ class CFP_75th_CRYE_Tee2: Uniform_Base {
 					containerClass = "Supply40";
 					mass = 20;
 		};
+};
+
+class CFP_75th_CRYE_Tee2_Clean: CFP_75th_CRYE_Tee2 {
+	displayName = "Crye Multicam Tee [Clean]";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\uniforms\75Uniform\crye_mcam_v1\crye_mcam_v1_co_new_clean.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "CFP_75th_CRYE_Tee2_Clean";
+		containerClass = "Supply40";
+		mass = 40;
+	};
 };
 
 
