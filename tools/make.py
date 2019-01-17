@@ -57,7 +57,7 @@ if sys.platform == "win32":
     import winreg
 
 ######## GLOBALS #########
-project = "@cfp"
+project = "@Community_Factions_Project"
 project_version = "0.4.5"
 arma3tools_path = ""
 work_drive = ""
