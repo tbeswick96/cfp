@@ -6,7 +6,7 @@ class CFP_AK_VEST: Vest_Camo_Base
 	scope = 2;
 	displayName = "AK MAG Vest";
 	// picture = "\x\cfp\addons\vests\AK_Vest\data\icon_chest_rig.paa";
-	author = "Yugoslav";
+	author = "CFP";
 	model = "x\cfp\addons\vests\AK_Vest\data\model\UO_AK_VEST.p3d";
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"x\cfp\addons\vests\AK_Vest\data\tak_soldier_equip_liz_co.paa"};
@@ -82,6 +82,22 @@ class CFP_AK_VEST_Lime: CFP_AK_VEST
 
 	displayName = "AK Chest Rig Lime";
 	hiddenSelectionsTextures[] = {"x\cfp\addons\vests\AK_Vest\data\tak_soldier_equip_limegreen.paa"};
+};
+
+class CFP_AK_VEST_M81: CFP_AK_VEST
+{
+    picture = "\x\cfp\addons\vests\data\ui\icon_CFP_AK_VEST_Lime.paa";
+
+	displayName = "AK Chest Rig M81";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\vests\AK_Vest\data\tak_soldier_equip_m81.paa"};
+};
+
+class CFP_AK_VEST_Marpat: CFP_AK_VEST
+{
+    picture = "\x\cfp\addons\vests\data\ui\icon_CFP_AK_VEST_Lime.paa";
+
+	displayName = "AK Chest Rig Marpat";
+	hiddenSelectionsTextures[] = {"x\cfp\addons\vests\AK_Vest\data\tak_soldier_equip_marpat.paa"};
 };
 
 class CFP_Field_Satchel: Vest_Camo_Base

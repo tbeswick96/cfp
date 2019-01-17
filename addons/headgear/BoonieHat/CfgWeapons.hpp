@@ -20,7 +20,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BoonieHat";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\Black.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 		class ItemInfo: HeadgearItem
 		{
@@ -44,7 +44,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BoonieHat";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\Green.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -71,7 +71,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BoonieHat";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\Tan.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -88,6 +88,33 @@ class CfgVehicleClasses
 		};
 	};
 
+	class CFP_BoonieHat_DCU: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BoonieHat_Tan.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Boonie Hat (DCU)";
+		// picture = "\x\cfp\addons\headgear\BoonieHat\ui\Tan.jpg";
+		model = "\x\cfp\addons\models\BoonieHat";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\DCU.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\BoonieHat";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\DCU.paa"};
+			hiddenSelections[] = {"Camo"};
+
+		};
+	};
+
 	class SP_BoonieHat_UN: ItemCore
     {
         picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BoonieHat_UN.paa";
@@ -98,7 +125,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BoonieHat";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\UN.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -120,12 +147,12 @@ class CfgVehicleClasses
         picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BoonieHat_ATacsFG.paa";
 	   	scope = 2;
 	   	weaponPoolAvailable = 1;
-	   	displayName = "Boonie Hat (A-Tacs FG";
+	   	displayName = "Boonie Hat (A-Tacs FG)";
 	    // picture = "\x\cfp\addons\headgear\BoonieHat\ui\ATacsFG.jpg";
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\ATacsFG.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "SP Craig";
+	    author = "CFP";
 
 
 
@@ -152,7 +179,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\NodUrban.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "SP Craig";
+	    author = "CFP";
 
 
 
@@ -179,7 +206,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\AfricanWoodland.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -206,7 +233,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\PolygonDesert.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -233,7 +260,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\PolygonWoodland.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -260,7 +287,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\M81.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -287,7 +314,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\ACRDesert.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -314,7 +341,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\Marpat.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -336,12 +363,12 @@ class CfgVehicleClasses
         picture = "\x\cfp\addons\headgear\data\ui\icon_CFP_BoonieHat_ACRDesert.paa";
 	 	scope = 2;
 	   	weaponPoolAvailable = 1;
-	  	displayName = "Boonie Hat (Marpat Desert)";
+	  	displayName = "Boonie Hat (AOR1)";
 	    // picture = "\x\cfp\addons\headgear\BoonieHat\ui\NodUrban.jpg";
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\MarpatDesert.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -368,7 +395,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\AOR2.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -395,7 +422,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\Tropentarn.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -422,7 +449,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\Flecktarn.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -449,7 +476,7 @@ class CfgVehicleClasses
 	    model = "\x\cfp\addons\models\BoonieHat";
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\Multicam.paa"};
 	    hiddenSelections[] = {"Camo"};
-	    author = "AuburnAlumni";
+	    author = "CFP";
 
 
 
@@ -462,6 +489,87 @@ class CfgVehicleClasses
 	       	passThrough = 0.30;
 	       	hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\Multicam.paa"};
 	       	hiddenSelections[] = {"Camo"};
+
+	    };
+	};
+
+	class CFP_BoonieHat2_DCU: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_CFP_BoonieHat_ACRDesert.paa";
+	 	scope = 2;
+	   	weaponPoolAvailable = 1;
+	  	displayName = "Boonie Hat Folded (DCU)";
+	    // picture = "\x\cfp\addons\headgear\BoonieHat\ui\NodUrban.jpg";
+	    model = "\x\cfp\addons\models\Booniefolded";
+	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\DCU2.paa"};
+	    hiddenSelections[] = {"camo3"};
+	    author = "CFP";
+
+
+
+	    class ItemInfo: HeadgearItem
+	    {
+	      	mass = 15;
+	     	uniformmodel = "\x\cfp\addons\models\Booniefolded";
+	       	modelSides[] = {3,1};
+	       	armor = 0;
+	       	passThrough = 0.30;
+	       	hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\DCU2.paa"};
+	       	hiddenSelections[] = {"camo3"};
+
+	    };
+	};
+
+	class CFP_BoonieHat2_M81: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_CFP_BoonieHat_ACRDesert.paa";
+	 	scope = 2;
+	   	weaponPoolAvailable = 1;
+	  	displayName = "Boonie Hat Folded (M81)";
+	    // picture = "\x\cfp\addons\headgear\BoonieHat\ui\NodUrban.jpg";
+	    model = "\x\cfp\addons\models\Booniefolded";
+	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\M812.paa"};
+	    hiddenSelections[] = {"camo3"};
+	    author = "CFP";
+
+
+
+	    class ItemInfo: HeadgearItem
+	    {
+	      	mass = 15;
+	     	uniformmodel = "\x\cfp\addons\models\Booniefolded";
+	       	modelSides[] = {3,1};
+	       	armor = 0;
+	       	passThrough = 0.30;
+	       	hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\M812.paa"};
+	       	hiddenSelections[] = {"camo3"};
+
+	    };
+	};
+
+	class CFP_BoonieHat2_M81Mali: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_CFP_BoonieHat_ACRDesert.paa";
+	 	scope = 2;
+	   	weaponPoolAvailable = 1;
+	  	displayName = "Boonie Hat Folded (M81 Mali)";
+	    // picture = "\x\cfp\addons\headgear\BoonieHat\ui\NodUrban.jpg";
+	    model = "\x\cfp\addons\models\Booniefolded";
+	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\M81Mali2.paa"};
+	    hiddenSelections[] = {"camo3"};
+	    author = "CFP";
+
+
+
+	    class ItemInfo: HeadgearItem
+	    {
+	      	mass = 15;
+	     	uniformmodel = "\x\cfp\addons\models\Booniefolded";
+	       	modelSides[] = {3,1};
+	       	armor = 0;
+	       	passThrough = 0.30;
+	       	hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BoonieHat\M81Mali2.paa"};
+	       	hiddenSelections[] = {"camo3"};
 
 	    };
 	};

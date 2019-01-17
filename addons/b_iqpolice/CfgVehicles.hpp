@@ -2,188 +2,226 @@
 #define weap_xx(a,b) class _xx_##a {weapon = ##a; count = b;}
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 
-class CfgVehicles
-{
-	class I_Soldier_02_F;
-	class I_Soldier_A_F : I_Soldier_02_F {
-		class EventHandlers;
-	};
-    class cfp_b_iqpolice_officer : I_Soldier_A_F
-	{
-		genericnames = "TakistaniMen";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Iraqi Police Officer";
-		faction = "CFP_B_IQPOLICE";
-		modelsides[] = {6};
-		side = 1;
-		vehicleClass = "CFP_B_IQPOLICE_INFANTRY";
-		icon = "iconManOfficer";
-		nakedUniform = "U_BasicBody";
-		uniformClass = "IP_uniform_officer_b";
-		hiddenSelections[] = {"Camo","insignia"};
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\b_iqpolice\data\IP_digital_flag.paa"};
-		camouflage = 1;
-		backpack = "";
-		headgearProbability = 50;
-		allowedHeadgear[] = {"H_PASGT_basic_blue_F"};
-		allowedHeadgearB[] = {""};
-		facewear = "";
-		allowedfacewear[] = {""};
-		randomWeaponProbability = 50;
-		beardProbability = 50;
-		linkedItems[] = {"SP_OpforRig1_Grey","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] = {"SP_OpforRig1_Grey","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		weapons[] = {"CUP_arifle_AK47","Binocular","Throw","Put"};
-		respawnweapons[] = {"CUP_arifle_AK47","Binocular","Throw","Put"};
-		magazines[] = {"CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M"};
-		Respawnmagazines[] = {"CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M"};
-		identityTypes[] = {"NoGlasses","LanguagePER_F","Head_TK","G_IRAN_default"};
-		class EventHandlers : EventHandlers
-		{
-			class ADDON {
-				init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_gear.sqf""; (_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_weapon.sqf""";
-			};
-		};
-		editorPreview = "x\cfp\addons\b_iqpolice\data\Preview_ip_infantry.jpg";
-	};
+class CBA_Extended_EventHandlers_base;
 
-    class cfp_b_iqpolice_policeman : I_Soldier_A_F
-	{
-		side = 1;
-		genericnames = "TakistaniMen";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Iraqi Policeman";
-		faction = "CFP_B_IQPOLICE";
-		modelsides[] = {6};
-		vehicleClass = "CFP_B_IQPOLICE_INFANTRY";
-		icon = "iconMan";
-		nakedUniform = "U_BasicBody";
-		uniformClass = "IP_uniform_policeman_b";
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\b_iqpolice\data\IP_dpm_flag.paa"};
-		camouflage = 1;
-		backpack = "";
-		headgearProbability = 30;
-		allowedHeadgear[] = {"H_PASGT_basic_blue_F"};
-		allowedHeadgearB[] = {""};
-		facewear = "";
-		allowedfacewear[] = {""};
-		randomWeaponProbability = 100;
-		linkedItems[] = {"SP_OpforRig1_Grey","ItemRadio"};
-		respawnLinkedItems[] = {"SP_OpforRig1_Grey","ItemRadio"};
-		weapons[] = {"CUP_arifle_AK47","Throw","Put"};
-		respawnweapons[] = {"CUP_arifle_AK47","Throw","Put"};
-		magazines[] = {"CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M"};
-		Respawnmagazines[] = {"CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M"};
-		identityTypes[] = {"NoGlasses","LanguagePER_F","Head_TK","G_IRAN_default"};
-		class EventHandlers : EventHandlers
-		{
-			class ADDON {
-				init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_gear.sqf""; (_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_weapon.sqf""";
-			};
-		};
-		editorPreview = "x\cfp\addons\b_iqpolice\data\Preview_ip_infantry.jpg";
-	};
+class CfgVehicles {
 
-	class Offroad_01_base_F;
+    class O_Soldier_F;
+    class O_Soldier_F_OCimport_01 : O_Soldier_F { scope = 0; class EventHandlers; };
+    class O_Soldier_F_OCimport_02 : O_Soldier_F_OCimport_01 { class EventHandlers; };
+
+
+    class cfp_b_iqpolice_officer : O_Soldier_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_iqpolice\data\preview\cfp_b_iqpolice_officer.JPG;
+        author = "Drew";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Iraqi Police Officer";
+        side = 1;
+        faction = "CFP_B_IQPOLICE";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","NoGlasses","G_IRAN_default"};
+
+        uniformClass = "CFP_FieldUniform_ipdigital";
+
+        linkedItems[] = {"CFP_RAV_Black","CFP_BaseballCap_IP2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"CFP_RAV_Black","CFP_BaseballCap_IP2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {"CUP_arifle_AKM","Binocular"};
+        respawnWeapons[] = {"CUP_arifle_AKM","Binocular"};
+
+        magazines[] = {"CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M"};
+        respawnMagazines[] = {"CUP_30Rnd_762x39_AK47_M","CUP_30Rnd_762x39_AK47_M"};
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_AKM","","","",{"CUP_30Rnd_762x39_AK47_M",30},{},""},{},{},{"CFP_FieldUniform_ipdigital",{{"FirstAidKit",1},{"CUP_30Rnd_762x39_AK47_M",1,30}}},{"CFP_RAV_Black",{{"CUP_30Rnd_762x39_AK47_M",6,30}}},{},"CFP_BaseballCap_IP2","CFP_Scarfshades_grey",{"Binocular","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"}};
+
+        randomGearProbability = 100;
+
+        //Uniforms
+        uniformList[] = {
+          "CFP_FieldUniform_ipdigital", 0.25,
+          "CFP_FieldUniform_ipdigital_SS", 0.25,
+          "CFP_FieldUniform_ipdpm", 0.25,
+          "CFP_FieldUniform_ipdpm_SS",0.25
+        };
+
+        //Helmets
+        headgearList[] = {
+            "", 0.1,
+            "CFP_Basic_Helmet_Black", 0.1,
+            "CFP_BaseballCap_IP1", 0.25,
+            "CFP_BaseballCap_IP2", 0.25,
+            "CFP_BaseballCap_IP3", 0.25,
+            "CFP_PASGTHelmet_IPDigital1", 0.2,
+            "CFP_PASGTHelmet_IPDigital2", 0.2,
+            "H_PASGT_basic_blue_F", 0.1,
+            "CFP_PASGTHelmet_IPDPM1", 0.2,
+            "CFP_PASGTHelmet_IPDPM2", 0.2,
+            "SP_Beret2_Red", 0.25,
+            "CFP_PatrolCap_IPDPM", 0.2,
+            "CFP_PatrolCap_IPDigital", 0.2
+        };
+
+        // Beards / mouth scarf / scarf / sunglasses
+        facewearList[] = {
+            "CFP_Oakleys_Clr", 0.2,
+            "CFP_Oakleys_Drk", 0.2,
+            "CFP_Oakleys_Embr", 0.2,
+            "CFP_Neck_Wrap2", 0.3,
+            "CFP_Neck_Wrap3", 0.3,
+            "CFP_Neck_Wrap4", 0.3,
+            "CFP_Neck_Plain2", 0.2,
+            "CFP_Neck_Plain3", 0.2,
+            "CFP_Neck_Plain4", 0.2,
+            "CFP_Scarfshades_tan", 0.3,
+            "CFP_Scarfshades_grey", 0.3,
+            "CFP_Scarfshades_white", 0.3,
+            "CFP_Scarfshades_green", 0.3
+        };
+
+        //Vests
+        vestList[] = {
+            "CFP_ITV_Empty_Brown", 0.2,
+            "CFP_ITV_Empty_ANP", 0.2,
+            "CFP_RAV_Black", 0.33,
+            "CUP_V_PMC_CIRAS_Coyote_Patrol", 0.2,
+            "CUP_V_PMC_CIRAS_Black_Patrol", 0.2,
+            "CUP_V_PMC_CIRAS_Coyote_Empty", 0.2,
+            "CUP_V_PMC_CIRAS_Black_Empty", 0.2,
+            "CFP_AK_VEST_Black", 0.2,
+            "CFP_AK_VEST_Tan", 0.2,
+            "CFP_AK_VEST_LOlive", 0.2
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack}; if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this] call CFP_main_fnc_randomizeUnit;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class cfp_b_iqpolice_policeman : cfp_b_iqpolice_officer {
+        editorPreview = \x\cfp\addons\b_iqpolice\data\preview\cfp_b_iqpolice_policeman.JPG;
+
+        displayName = "Iraqi Policeman";
+
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Empty","SP_Beret2_Red","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Empty","SP_Beret2_Red","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {"CUP_arifle_AK74M"};
+        respawnWeapons[] = {"CUP_arifle_AK74M"};
+
+        magazines[] = {"CUP_30Rnd_545x39_AK74M_M","CUP_30Rnd_545x39_AK74M_M"};
+        respawnMagazines[] = {"CUP_30Rnd_545x39_AK74M_M","CUP_30Rnd_545x39_AK74M_M"};
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_AK74M","","","",{"CUP_30Rnd_545x39_AK74M_M",30},{},""},{},{},{"CFP_FieldUniform_ipdpm",{{"FirstAidKit",1},{"CUP_HandGrenade_RGD5",2,1},{"CUP_30Rnd_545x39_AK74M_M",1,30}}},{"CUP_V_PMC_CIRAS_Black_Empty",{{"CUP_30Rnd_545x39_AK74M_M",5,30}}},{},"SP_Beret2_Red","CFP_Neck_Wrap4",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"}};
+
+    };
+
+    class Offroad_01_base_F;
     class Offroad_01_base_F_OCimport_01 : Offroad_01_base_F { scope = 0; class Eventhandlers; };
-    class cfp_b_iqpolice_offroad : Offroad_01_base_F_OCimport_01
-	{
-		scope = 2;
-		side = 1;
-		displayName = "IP Offroad";
-		faction = "CFP_B_IQPOLICE";
-		vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
-		camouflage = 4;
-		crew = "cfp_b_iqpolice_policeman";
-		typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\b_iqpolice\data\offroad_ip_03.paa","\x\cfp\addons\b_iqpolice\data\offroad_ip_01.paa"};
-		class EventHandlers : EventHandlers
-		{
-			class ADDON {
-				init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_tex.sqf""";
-			};
-		};
-		editorPreview = "\x\cfp\addons\b_iqpolice\data\Preview_IP_Offroad.jpg";
-	};
-	class B_G_Offroad_01_armed_F;
+    class cfp_b_iqpolice_offroad : Offroad_01_base_F_OCimport_01 {
+        editorPreview = \x\cfp\addons\b_iqpolice\data\preview\cfp_b_iqpolice_offroad.JPG;
+        scope = 2;
+        side = 1;
+        displayName = "IP Offroad";
+        faction = "CFP_B_IQPOLICE";
+        vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
+        camouflage = 4;
+        crew = "cfp_b_iqpolice_policeman";
+        typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
+        hiddenSelections[] = {"camo","camo2"};
+        hiddenSelectionsTextures[] = {"\x\cfp\addons\b_iqpolice\data\offroad_ip_03.paa","\x\cfp\addons\b_iqpolice\data\offroad_ip_01.paa"};
+        class EventHandlers : EventHandlers
+        {
+            class ADDON {
+                init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_tex.sqf""";
+            };
+        };
+
+    };
+    class B_G_Offroad_01_armed_F;
     class B_G_Offroad_01_armed_F_OCimport_01 : B_G_Offroad_01_armed_F { scope = 0; class Eventhandlers; };
-    class cfp_b_iqpolice_offroad_M2 : B_G_Offroad_01_armed_F_OCimport_01
-	{
-		scope = 2;
-		side = 1;
-		displayName = "IP Offroad MG";
-		faction = "CFP_B_IQPOLICE";
-		vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
-		camouflage = 4;
-		crew = "cfp_b_iqpolice_policeman";
-		typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\b_iqpolice\data\offroad_ip_05.paa","\x\cfp\addons\b_iqpolice\data\offroad_ip_02.paa"};
-		class EventHandlers : EventHandlers
-		{
-			class ADDON {
-				init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_tex.sqf""";
-			};
-		};
-		editorPreview = "\x\cfp\addons\b_iqpolice\data\Preview_IP_Offroad_MG.jpg";
-	};
-	class CUP_B_HMMWV_M2_USA;
+    class cfp_b_iqpolice_offroad_M2 : B_G_Offroad_01_armed_F_OCimport_01 {
+        editorPreview = \x\cfp\addons\b_iqpolice\data\preview\cfp_b_iqpolice_offroad_M2.JPG;
+        scope = 2;
+        side = 1;
+        displayName = "IP Offroad MG";
+        faction = "CFP_B_IQPOLICE";
+        vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
+        camouflage = 4;
+        crew = "cfp_b_iqpolice_policeman";
+        typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
+        hiddenSelections[] = {"camo","camo2"};
+        hiddenSelectionsTextures[] = {"\x\cfp\addons\b_iqpolice\data\offroad_ip_05.paa","\x\cfp\addons\b_iqpolice\data\offroad_ip_02.paa"};
+        class EventHandlers : EventHandlers
+        {
+            class ADDON {
+                init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_tex.sqf""";
+            };
+        };
+
+    };
+    class CUP_B_HMMWV_M2_USA;
     class CUP_B_HMMWV_M2_USA_OCimport_01 : CUP_B_HMMWV_M2_USA { scope = 0; class Eventhandlers; };
-    class cfp_b_iqpolice_HMMWV_M2 : CUP_B_HMMWV_M2_USA_OCimport_01
-	{
-		scope = 2;
-		side = 1;
-		displayName = "IP HMMWV M2";
-		faction = "CFP_B_IQPOLICE";
-		vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
-		camouflage = 4;
-		crew = "cfp_b_iqpolice_policeman";
-		typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
-		class EventHandlers : EventHandlers
-		{
-			class ADDON {
-				init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_tex.sqf""";
-			};
-		};
-		editorPreview = "\x\cfp\addons\b_iqpolice\data\Preview_IP_HMMWV.jpg";
-	};
-	class CUP_B_HMMWV_DSHKM_GPK_ACR;
+    class cfp_b_iqpolice_HMMWV_M2 : CUP_B_HMMWV_M2_USA_OCimport_01 {
+        editorPreview = \x\cfp\addons\b_iqpolice\data\preview\cfp_b_iqpolice_HMMWV_M2.JPG;
+        scope = 2;
+        side = 1;
+        displayName = "IP HMMWV M2";
+        faction = "CFP_B_IQPOLICE";
+        vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
+        camouflage = 4;
+        crew = "cfp_b_iqpolice_policeman";
+        typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
+        class EventHandlers : EventHandlers
+        {
+            class ADDON {
+                init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_tex.sqf""";
+            };
+        };
+
+    };
+    class CUP_B_HMMWV_DSHKM_GPK_ACR;
     class CUP_B_HMMWV_DSHKM_GPK_ACR_OCimport_01 : CUP_B_HMMWV_DSHKM_GPK_ACR { scope = 0; class Eventhandlers; };
-    class cfp_b_iqpolice_hmmwv_dshkm : CUP_B_HMMWV_DSHKM_GPK_ACR_OCimport_01
-	{
-		scope = 2;
-		side = 1;
-		displayName = "IA HMMWV GPK DShKM";
-		faction = "CFP_B_IQPOLICE";
-		vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
-		camouflage = 4;
-		crew = "cfp_b_iqpolice_policeman";
-		typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
-	};
-	class CUP_O_Ural_CHDKZ;
+    class cfp_b_iqpolice_hmmwv_dshkm : CUP_B_HMMWV_DSHKM_GPK_ACR_OCimport_01 {
+        editorPreview = \x\cfp\addons\b_iqpolice\data\preview\cfp_b_iqpolice_hmmwv_dshkm.JPG;
+        scope = 2;
+        side = 1;
+        displayName = "IA HMMWV GPK DShKM";
+        faction = "CFP_B_IQPOLICE";
+        vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
+        camouflage = 4;
+        crew = "cfp_b_iqpolice_policeman";
+        typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
+    };
+    class CUP_O_Ural_CHDKZ;
     class CUP_O_Ural_CHDKZ_OCimport_01 : CUP_O_Ural_CHDKZ { scope = 0; class Eventhandlers; };
-    class cfp_b_iqpolice_Ural : CUP_O_Ural_CHDKZ_OCimport_01
-	{
-		scope = 2;
-		side = 1;
-		displayName = "IP Ural";
-		faction = "CFP_B_IQPOLICE";
-		vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
-		camouflage = 4;
-		crew = "cfp_b_iqpolice_policeman";
-		typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
-		class EventHandlers : EventHandlers
-		{
-			class ADDON {
-				init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_tex.sqf""";
-			};
-		};
-		editorPreview = "\x\cfp\addons\b_iqpolice\data\Preview_IA_Ural.jpg";
-	};
+    class cfp_b_iqpolice_Ural : CUP_O_Ural_CHDKZ_OCimport_01 {
+        editorPreview = \x\cfp\addons\b_iqpolice\data\preview\cfp_b_iqpolice_Ural.JPG;
+        scope = 2;
+        side = 1;
+        displayName = "IP Ural";
+        faction = "CFP_B_IQPOLICE";
+        vehicleClass = "CFP_B_IQPOLICE_MOTORIZED";
+        camouflage = 4;
+        crew = "cfp_b_iqpolice_policeman";
+        typicalCargo[] = {"cfp_b_iqpolice_policeman","cfp_b_iqpolice_policeman"};
+        class EventHandlers : EventHandlers
+        {
+            class ADDON {
+                init = "(_this select 0) execVM ""\x\cfp\addons\b_iqpolice\Scripts\randomize_tex.sqf""";
+            };
+        };
+
+    };
 
     class CUP_USBasicAmmunitionBox; // CUP_USBasicAmmunitionBox
     class CUP_USBasicWeaponsBox; // CUP_USBasicWeaponsBox
@@ -221,7 +259,7 @@ class CfgVehicles
         class TransportMagazines {
         };
         class TransportItems {
-            item_xx(IP_uniform_officer_b,15);
+            item_xx(CFP_FieldUniform_ipdigital,15);
             item_xx(IP_uniform_policeman_b,15);
         };
     };
@@ -261,7 +299,7 @@ class CfgVehicles
             item_xx(ItemWatch,10);
             item_xx(ItemRadio,10);
             item_xx(V_TacVest_camo,10);
-            item_xx(IP_uniform_officer_b,10);
+            item_xx(CFP_FieldUniform_ipdigital,10);
             item_xx(IP_uniform_policeman_b,10);
         };
     };

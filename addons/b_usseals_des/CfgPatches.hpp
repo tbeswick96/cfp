@@ -29,6 +29,7 @@ class CfgPatches {
             "CFP_B_USSEALS_Grenadier_Light_MCAM_DES_01",
             "CFP_B_USSEALS_Marksman_Light_MCAM_DES_01",
             "CFP_B_USSEALS_Explosive_Specialist_Light_MCAM_DES_01",
+            "CFP_B_USSEALS_MH_47E_DES_01",
             "CFP_B_USSEALS_UH_60M_DES_01",
             "CFP_B_USSEALS_MH_6M_MELB_DES_01",
             "CFP_B_USSEALS_MH_6J_Little_Bird_DES_01",
@@ -53,6 +54,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {
+            "cfp_main",
             "A3_Characters_F",
             "CUP_AirVehicles_UH60",
             "CUP_AirVehicles_AH6",

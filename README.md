@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://github.com/tupolov/cfp/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.4.5-blue.svg?style=flat-square" alt="CFP Version">
+        <img src="https://img.shields.io/badge/Version-0.6.1-blue.svg?style=flat-square" alt="CFP Version">
     </a>
     <a href="https://github.com/tupolov/cfp/issues">
         <img src="https://img.shields.io/github/issues-raw/tupolov/CFP.svg?style=flat-square&label=Issues" alt="CFP Issues">
@@ -55,13 +55,14 @@ CFP factions cover major current conflict zones such as Afghanistan, Iraq, Syria
 **bold** = Complete
 
 ### OPFOR
-* Abu Sayyaf
+* Abu Sayyaf - cfp_o_abusayyaf
 * Al-Qaeda - cfp_o_alqaeda
 * Al-Qassam Brigades (Hamas) - cfp_o_hamas
 * Al-Shabaab - cfp_o_alshabaab
 * Boko Haram (Nigeria) - cfp_o_bokoharam
 * Central African Rebels - cfp_o_cfrebels
 * Columbian FARC Rebels
+* Chernarussian Movement (Winter) - cfp_o_chdkz_snw
 * Hezbollah - cfp_o_hezbollah
 * Houthis (Yemen) - cfp_o_ansarallah
 * IRA
@@ -70,6 +71,7 @@ CFP factions cover major current conflict zones such as Afghanistan, Iraq, Syria
 * Islamic State - cfp_o_isis
 * Libyan National Army
 * Mali Islamic Rebels
+* North Korea = cfp_o_nkarmy
 * Russian Ground Forces - split into various theater specific factions including Special Operations Forces - cup_o_ru, cfp_o_ruarmy_des
 * Russian National Guard (formerly MVD) - cfp_o_rumvd
 * Russian Navy
@@ -108,6 +110,7 @@ CFP factions cover major current conflict zones such as Afghanistan, Iraq, Syria
 * Armed Forces of the Czech Republic - split into theater factions - cfp_b_czarmy_wdl, cup_b_cz
 * British Army - split into theater factions - cup_b_gb, cfp_b_gbarmy_wdl
 * Bundeswehr (KSK) - split into theater factions - cfp_b_dearmy_wdl, cup_b_ger
+* Chernarus Defense Force (Winter) - cfp_b_cdf_snw
 * Iraqi Armed Forces - cfp_b_iqarmy
 * Iraqi Police - cfp_b_iqpolice
 * Israeli Defence Force - cfp_b_ilidf
@@ -152,8 +155,11 @@ CFP uses technology to script and randomize loadouts of units - this provides a 
 * Tupolov
 * AUTigerGrad
 * AccuracyThruVolume
+* SuperOps
 * Archduke
 * SP Craig
+* Dusin
+* Simcardo
 * VanSchmoozin
 * Siege-A
 * Hawaiian

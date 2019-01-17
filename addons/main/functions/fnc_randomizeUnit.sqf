@@ -44,8 +44,8 @@ if (local _unit) then {
 	private _gearProbability = getNumber (configFile >> "CfgVehicles" >> typeOf _unit >> "randomGearProbability");
 
 	if (random 100 < _gearProbability) then {
-		private _magazines = magazines _unit;
 
+		//diag_log format["%1 Mags before random gear: %2", typeof _unit, count magazines _unit];
 		{
 			private _cat = format ["%1List",_x];
 			if (count (getArray (configFile >> "CfgVehicles" >> typeOf _unit >> _cat))>0) then {
@@ -53,9 +53,8 @@ if (local _unit) then {
 			};
 		} foreach GEAR_CATEGORIES;
 
-		{
-			_unit addMagazine _x;
-		} foreach _magazines;
+
+		//diag_log format["%1 New Mags after random gear: %2", typeof _unit, count magazines _unit];
 
 		// Add FAK and medikit if medic
 		if (side _unit != civilian) then {
@@ -68,6 +67,7 @@ if (local _unit) then {
 				};
 			};
 		};
+
 	};
 
 	// Check to see if we randomize Weapon
@@ -81,6 +81,5 @@ if (local _unit) then {
 				[_unit, _x] call FUNC(randomizeWeapon);
 			};
 		} foreach WEAPON_CATEGORIES;
-
 	};
 };

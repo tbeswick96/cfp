@@ -74,20 +74,10 @@ class CfgVehicles {
         };
     };
 
-    class CUP_O_T55_SLA;
-    class CUP_O_T55_SLA_OCimport_01 : CUP_O_T55_SLA { scope = 0; class EventHandlers; class Turrets; };
-    class CUP_O_T55_SLA_OCimport_02 : CUP_O_T55_SLA_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-            class CargoTurret_01;
-            class CargoTurret_02;
-            class CargoTurret_03;
-            class CargoTurret_04;
-            class CargoTurret_05;
-            class CargoTurret_06;
-        };
-    };
+    class CUP_O_T55_CSAT;
+    class CUP_O_T55_CSAT_OCimport_01 : CUP_O_T55_CSAT { scope = 0; class EventHandlers; };
+    class CUP_O_T55_CSAT_OCimport_02 : CUP_O_T55_CSAT_OCimport_01 { scope = 0; class EventHandlers; };
+
 
     class CUP_O_T72_SLA;
     class CUP_O_T72_SLA_OCimport_01 : CUP_O_T72_SLA { scope = 0; class EventHandlers; class Turrets; };
@@ -207,7 +197,7 @@ class CfgVehicles {
         side = 0;
         faction = "CFP_O_HEZBOLLAH";
 
-        identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+        identityTypes[] = {"Head_TK","Language_Ackbar","G_IRAN_default"};
         uniformClass = "CFP_U_FieldUniform_marpat_w";
 
 
@@ -227,6 +217,35 @@ class CfgVehicles {
         "CFP_PASGTHelmet_Marpat2", 0.2
             };
 
+        facewearList[] = {
+            "CFP_Oakleys_Clr", 0.2,
+            "CFP_Oakleys_Drk", 0.2,
+            "CFP_Oakleys_Embr", 0.2,
+            "CFP_Neck_Wrap2", 0.3,
+            "CFP_Neck_Wrap3", 0.3,
+            "CFP_Neck_Wrap4", 0.3,
+            "CFP_Neck_Plain2", 0.2,
+            "CFP_Neck_Plain3", 0.2,
+            "CFP_Neck_Plain4", 0.2,
+            "CFP_Scarfshades_tan", 0.3,
+            "CFP_Scarfshades_grey", 0.3,
+            "CFP_Scarfshades_white", 0.3,
+            "CFP_Scarfshades_green", 0.3,
+            "CFP_Scarfbeard_white", 0.2,
+            "CFP_Scarfbeard_grey", 0.2,
+            "CFP_Scarfbeard_green", 0.2,
+            "CFP_Scarfbeard_tan", 0.2,
+            "CFP_Scarfbeardshades_white", 0.2,
+            "CFP_Scarfbeardshades_grey", 0.2,
+            "CFP_Scarfbeardshades_green", 0.2,
+            "CFP_Scarfbeardshades_tan", 0.2,
+            "CFP_Shemagh_Neck_Gold", 0.3,
+            "CFP_Shemagh_Neck_Creme", 0.3,
+            "CFP_Shemagh_Neck_Red", 0.3,
+            "CFP_Shemagh_Neck_White", 0.3,
+            "CFP_Shemagh_Neck", 0.3
+        };
+
         // Militia Vests
             vestList[] = {
         "CFP_Tactical1_Woodland", 0.2,
@@ -240,8 +259,8 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack}; if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this] call CFP_main_fnc_randomizeUnit;[_this, 'CFP_INSIGNIA_HEZBOLLAH2'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
+               init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack}; if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this] call CFP_main_fnc_randomizeUnit;[_this, 'CFP_INSIGNIA_HEZBOLLAH2'] call BIS_fnc_setUnitInsignia;[_this, 'Male01_ackbar'] remoteExecCall ['setSpeaker', 0];  [_this, 'Male01_ackbar'] spawn cfp_main_fnc_setSpeakerRemote;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+           };
 
         };
 
@@ -371,7 +390,7 @@ class CfgVehicles {
         side = 0;
         faction = "CFP_O_HEZBOLLAH";
 
-        identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+        identityTypes[] = {"Head_TK","Language_Ackbar","G_IRAN_default"};
         uniformClass = "CFP_U_BattleDressUniform_M81";
 
 
@@ -412,11 +431,38 @@ class CfgVehicles {
     	"G_Bandanna_blk", 0.15,
     	"G_Bandanna_oli", 0.15,
     	"G_Bandanna_khk", 0.15,
-    	"CUP_TK_NeckScarf", 0.15,
-    	"CUP_FR_NeckScarf", 0.15,
-    	"CUP_FR_NeckScarf2", 0.15,
-        "CFP_Beard", 0.3
-    		};
+    	"CFP_Oakleys_Clr", 0.2,
+        "CFP_Oakleys_Drk", 0.2,
+        "CFP_Oakleys_Embr", 0.2,
+        "CFP_Neck_Wrap2", 0.3,
+        "CFP_Neck_Wrap3", 0.3,
+        "CFP_Neck_Wrap4", 0.3,
+        "CFP_Neck_Plain2", 0.2,
+        "CFP_Neck_Plain3", 0.2,
+        "CFP_Neck_Plain4", 0.2,
+        "CFP_Scarfshades_tan", 0.3,
+        "CFP_Scarfshades_grey", 0.3,
+        "CFP_Scarfshades_white", 0.3,
+        "CFP_Scarfshades_green", 0.3,
+        "CFP_Scarfbeard_white", 0.2,
+        "CFP_Scarfbeard_grey", 0.2,
+        "CFP_Scarfbeard_green", 0.2,
+        "CFP_Scarfbeard_tan", 0.2,
+        "CFP_Scarfbeardshades_white", 0.2,
+        "CFP_Scarfbeardshades_grey", 0.2,
+        "CFP_Scarfbeardshades_green", 0.2,
+        "CFP_Scarfbeardshades_tan", 0.2,
+        "CFP_Shemagh_Half_Red", 0.3,
+        "CFP_Shemagh_Half_White", 0.3,
+        "CFP_Shemagh_Half_Tan", 0.3,
+        "CFP_Shemagh_Half_Black", 0.3,
+        "CFP_Shemagh_Face_Atacsau", 0.3,
+        "CFP_Shemagh_Neck_Gold", 0.3,
+        "CFP_Shemagh_Neck_Creme", 0.3,
+        "CFP_Shemagh_Neck_Red", 0.3,
+        "CFP_Shemagh_Neck_White", 0.3,
+        "CFP_Shemagh_Neck", 0.3
+        	};
 
         // Militia Vests
             vestList[] = {
@@ -434,7 +480,7 @@ class CfgVehicles {
                 class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
                 class ALiVE_orbatCreator {
-                    init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack}; if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this] call CFP_main_fnc_randomizeUnit;[_this, 'CFP_INSIGNIA_HEZBOLLAH2'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                    init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack}; if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this] call CFP_main_fnc_randomizeUnit;[_this, 'CFP_INSIGNIA_HEZBOLLAH2'] call BIS_fnc_setUnitInsignia;[_this, 'Male01_ackbar'] remoteExecCall ['setSpeaker', 0];  [_this, 'Male01_ackbar'] spawn cfp_main_fnc_setSpeakerRemote;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
                 };
 
             };
@@ -520,7 +566,7 @@ class CfgVehicles {
         side = 0;
         faction = "CFP_O_HEZBOLLAH";
 
-        identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+        identityTypes[] = {"Head_TK","Language_Ackbar","G_IRAN_default"};
         uniformClass = "CFP_U_BattleDressUniform_edrl";
 
         backpack = "B_AssaultPack_rgr";
@@ -564,7 +610,7 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack}; if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this] call CFP_main_fnc_randomizeUnit;[_this, 'CFP_INSIGNIA_HEZBOLLAH2'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                    init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack}; if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this] call CFP_main_fnc_randomizeUnit;[_this, 'CFP_INSIGNIA_HEZBOLLAH2'] call BIS_fnc_setUnitInsignia;[_this, 'Male01_ackbar'] remoteExecCall ['setSpeaker', 0];  [_this, 'Male01_ackbar'] spawn cfp_main_fnc_setSpeakerRemote;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
@@ -616,7 +662,7 @@ class CfgVehicles {
         side = 0;
         faction = "CFP_O_HEZBOLLAH";
 
-        identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+        identityTypes[] = {"Head_TK","Language_Ackbar","G_IRAN_default"};
         uniformClass = "CFP_U_FieldUniform_edrl";
 
 
@@ -634,7 +680,7 @@ class CfgVehicles {
     		uniformList[] = {
     	"CFP_U_FieldUniform_edrl", 0.33,
     	"CFP_U_FieldUniform_M81", 0.33,
-        "CFP_U_FieldUniform_ana_wddark", 0.33
+        "CFP_U_FieldUniform_M81_SS", 0.33
     		};
 
     	// Hezbollah Headgear
@@ -652,17 +698,44 @@ class CfgVehicles {
 
     	// Hezbollah Facewear
     		facewearList[] = {
-    	"CUP_TK_NeckScarf", 0.25,
-    	"CUP_FR_NeckScarf", 0.25,
-    	"CUP_FR_NeckScarf2", 0.25,
-        "CFP_Beard", 0.25
-    		};
+            "CFP_Oakleys_Clr", 0.2,
+            "CFP_Oakleys_Drk", 0.2,
+            "CFP_Oakleys_Embr", 0.2,
+            "CFP_Neck_Wrap2", 0.3,
+            "CFP_Neck_Wrap3", 0.3,
+            "CFP_Neck_Wrap4", 0.3,
+            "CFP_Neck_Plain2", 0.2,
+            "CFP_Neck_Plain3", 0.2,
+            "CFP_Neck_Plain4", 0.2,
+            "CFP_Scarfshades_tan", 0.3,
+            "CFP_Scarfshades_grey", 0.3,
+            "CFP_Scarfshades_white", 0.3,
+            "CFP_Scarfshades_green", 0.3,
+            "CFP_Scarfbeard_white", 0.2,
+            "CFP_Scarfbeard_grey", 0.2,
+            "CFP_Scarfbeard_green", 0.2,
+            "CFP_Scarfbeard_tan", 0.2,
+            "CFP_Scarfbeardshades_white", 0.2,
+            "CFP_Scarfbeardshades_grey", 0.2,
+            "CFP_Scarfbeardshades_green", 0.2,
+            "CFP_Scarfbeardshades_tan", 0.2,
+            "CFP_Shemagh_Half_Red", 0.3,
+            "CFP_Shemagh_Half_White", 0.3,
+            "CFP_Shemagh_Half_Tan", 0.3,
+            "CFP_Shemagh_Half_Black", 0.3,
+            "CFP_Shemagh_Face_Atacsau", 0.3,
+            "CFP_Shemagh_Neck_Gold", 0.3,
+            "CFP_Shemagh_Neck_Creme", 0.3,
+            "CFP_Shemagh_Neck_Red", 0.3,
+            "CFP_Shemagh_Neck_White", 0.3,
+            "CFP_Shemagh_Neck", 0.3
+        };
 
             class EventHandlers : EventHandlers {
                 class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
                 class ALiVE_orbatCreator {
-                    init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack}; if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this] call CFP_main_fnc_randomizeUnit;[_this, 'CFP_INSIGNIA_HEZBOLLAH2'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                    init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack}; if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this] call CFP_main_fnc_randomizeUnit;[_this, 'CFP_INSIGNIA_HEZBOLLAH2'] call BIS_fnc_setUnitInsignia;[_this, 'Male01_ackbar'] remoteExecCall ['setSpeaker', 0];  [_this, 'Male01_ackbar'] spawn cfp_main_fnc_setSpeakerRemote;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
                 };
 
             };
@@ -1143,83 +1216,42 @@ class CfgVehicles {
 
     };
 
-    class CFP_O_HEZBOLLAH_T55_01 : CUP_O_T55_SLA_OCimport_02 {
-        editorPreview = \x\cfp\addons\o_hezbollah\data\preview\CFP_O_HEZBOLLAH_T55_01.JPG;
-        author = "Drew";
+    class cup_t55_base;
+    class CFP_O_HEZBOLLAH_T55_01: cup_t55_base
+    {
         scope = 2;
         scopeCurator = 2;
-        displayName = "T-55";
         side = 0;
+        displayName = "T-55";
         faction = "CFP_O_HEZBOLLAH";
         crew = "CFP_O_HEZBOLLAH_Crew_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "CFP_O_HEZBOLLAH_Crew_01"; };
-            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
-            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
-            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
-            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
-            class CargoTurret_05 : CargoTurret_05 { gunnerType = ""; };
-            class CargoTurret_06 : CargoTurret_06 { gunnerType = ""; };
-        };
-
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
+        typicalCargo[] = {"CFP_O_HEZBOLLAH_Crew_01","CFP_O_HEZBOLLAH_Crew_01","CFP_O_HEZBOLLAH_Crew_01"};
+        hiddenSelectionsTextures[] = {"\CUP\TrackedVehicles\CUP_TrackedVehicles_T55\data\t55_body_sla_co.paa","\CUP\TrackedVehicles\CUP_TrackedVehicles_T55\data\t55_tower_sla_co.paa"};
+        editorPreview = \x\cfp\addons\o_hezbollah\data\preview\CFP_O_HEZBOLLAH_T55_01.JPG;
     };
 
-	class CFP_O_HEZBOLLAH_T55_flag_01 : CUP_O_T55_SLA_OCimport_02 {
-        editorPreview = \x\cfp\addons\o_hezbollah\data\preview\CFP_O_HEZBOLLAH_T55_flag_01.JPG;
-        author = "Drew";
+
+    class CFP_O_HEZBOLLAH_T55_flag_01 : CUP_O_T55_CSAT_OCimport_02
+    {
         scope = 2;
-        scopeCurator = 2;
-        displayName = "T-55 (flag)";
         side = 0;
+        displayName = "T-55 (flag)";
         faction = "CFP_O_HEZBOLLAH";
+        vehicleClass = "CFP_O_HEZBOLLAH_ARMORED";
+        camouflage = 4;
         crew = "CFP_O_HEZBOLLAH_Crew_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "CFP_O_HEZBOLLAH_Crew_01"; };
-            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
-            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
-            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
-            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
-            class CargoTurret_05 : CargoTurret_05 { gunnerType = ""; };
-            class CargoTurret_06 : CargoTurret_06 { gunnerType = ""; };
-        };
-
-
-
-        class EventHandlers : EventHandlers
+        typicalCargo[] = {"CFP_O_HEZBOLLAH_Crew_01","CFP_O_HEZBOLLAH_Crew_01","CFP_O_HEZBOLLAH_Crew_01"};
+        hiddenSelectionsTextures[] = {"\CUP\TrackedVehicles\CUP_TrackedVehicles_T55\data\t55_body_sla_co.paa","\CUP\TrackedVehicles\CUP_TrackedVehicles_T55\data\t55_tower_sla_co.paa"};
+        editorPreview = \x\cfp\addons\o_hezbollah\data\preview\CFP_O_HEZBOLLAH_T55_flag_01.JPG;
+            class EventHandlers : EventHandlers
 		{
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-			class ADDON
+            class ADDON
 			{
 				init = "(_this select 0) execVM ""\x\cfp\addons\o_hezbollah\Scripts\AttachFlag.sqf""";
 				killed = "(_this select 0) execVM ""\x\cfp\addons\o_hezbollah\Scripts\onkilled.sqf""";
 			};
 
         };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
     };
 
     class CFP_O_HEZBOLLAH_T72_01 : CUP_O_T72_SLA_OCimport_02 {
@@ -1310,7 +1342,7 @@ class CfgVehicles {
         side = 0;
         faction = "CFP_O_HEZBOLLAH";
 
-        identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+        identityTypes[] = {"Head_TK","Language_Ackbar","G_IRAN_default"};
         uniformClass = "CFP_U_BattleDressUniform_edrl";
 
 
@@ -1795,7 +1827,7 @@ class CfgVehicles {
             item_xx(CFP_U_BattleDressUniform_M81,15);
             item_xx(CFP_U_FieldUniform_edrl,15);
             item_xx(CFP_U_FieldUniform_M81,15);
-            item_xx(CFP_U_FieldUniform_ana_wddark,15);
+            item_xx(CFP_U_FieldUniform_M81_SS,15);
         };
     };
     class CFP_O_HEZBOLLAH_SupportBox : CUP_RUSpecialWeaponsBox {
@@ -1965,7 +1997,7 @@ class CfgVehicles {
             item_xx(CFP_U_BattleDressUniform_M81,10);
             item_xx(CFP_U_FieldUniform_edrl,10);
             item_xx(CFP_U_FieldUniform_M81,10);
-            item_xx(CFP_U_FieldUniform_ana_wddark,10);
+            item_xx(CFP_U_FieldUniform_M81_SS,10);
         };
     };
 

@@ -161,6 +161,71 @@
 
 	};
 
+	class CFP_BattleDressUniform_M81_Sudan: CFP_Uniform
+	{
+
+
+		displayName = "Battle Dress Uniform (M81 Sudan)";
+
+		uniformClass = "CFP_BattleDressUniform_3ColorDesert";
+
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_M81_Sudan.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_M81_Sudan.paa"};
+
+
+	};
+
+	class CFP_BattleDressUniform_Sword: CFP_Uniform
+	{
+
+
+		displayName = "Battle Dress Uniform (Sudan Sword)";
+
+		uniformClass = "CFP_BattleDressUniform_Sword";
+
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_Sword.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_Sword.paa"};
+
+
+	};
+
+	class CFP_BattleDressUniform_Sword2: CFP_Uniform
+	{
+
+
+		displayName = "Battle Dress Uniform (Sudan Sword 2)";
+
+		uniformClass = "CFP_BattleDressUniform_Sword2";
+
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_Sword2.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_Sword2.paa"};
+
+
+	};
+
+	class CFP_BattleDressUniform_BrownDigital: CFP_Uniform
+	{
+
+
+		displayName = "Battle Dress Uniform (Sudan Brown Digital)";
+
+		uniformClass = "CFP_BattleDressUniform_BrownDigital";
+
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_Brown.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_Brown.paa"};
+
+
+	};
+
+	class CFP_BattleDressUniform_AridDigital: CFP_Uniform
+	{
+
+
+		displayName = "Battle Dress Uniform (Sudan Arid Digital)";
+
+		uniformClass = "CFP_BattleDressUniform_AridDigital";
+
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_Sudan.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_Sudan.paa"};
+
+
+	};
+
 	class CFP_BattleDressUniform_AfricanWoodlandDark: CFP_Uniform
 	{
 
@@ -208,7 +273,7 @@
 
 		uniformClass = "CFP_U_BattleDressUniform_M81";
 
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_M81.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_M81.paa"};
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_M81.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_ana_wddark.paa"};
 
 
 	};
@@ -221,33 +286,20 @@
 
 		uniformClass = "CFP_U_BattleDressUniform_M81light";
 
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_M81.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_M81light.paa"};
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_M81.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_ana_wdlight.paa"};
 
 
 	};
 
-	class CFP_BattleDressUniform_dpm: CFP_Uniform
+	class CFP_BattleDressUniform_DDPM: CFP_Uniform
 	{
 
 
-		displayName = "Battle Dress Uniform (DPM)";
+		displayName = "Battle Dress Uniform (DDPM)";
 
-		uniformClass = "CFP_U_BattleDressUniform_Dpm";
+		uniformClass = "CFP_U_BattleDressUniform_DDPM";
 
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_dpm.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_dpm.paa"};
-
-
-	};
-
-	class CFP_BattleDressUniform_drk: CFP_Uniform
-	{
-
-
-		displayName = "Battle Dress Uniform (DRK)";
-
-		uniformClass = "CFP_U_BattleDressUniform_drk";
-
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_drk.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_drk.paa"};
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_ddpm.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_ddpm.paa"};
 
 
 	};
@@ -367,7 +419,6 @@
 	UNIFORM_V("Battle Dress Uniform (TIger Stripe 2)",tigerstripe2)
 	UNIFORM_V("Battle Dress Uniform (OCP)",scorpion_w2)
 	UNIFORM_V("Battle Dress Uniform (Flora Arid)",flora_arid)
-	UNIFORM_V("Battle Dress Uniform (Afghan Woodland)",afghan_w)
 	UNIFORM_V("Battle Dress Uniform (ACR Desert)",acr_desert)
 
 	class CFP_BattleDressUniform_atacs_au : CFP_Uniform
@@ -375,27 +426,6 @@
 		displayName = "Battle Dress Uniform (A-Tacs AU)";
 		uniformClass = "CFP_U_BattleDressUniform_atacs_au";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_atacs_au.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_atacs_au.paa"};
-	};
-
-	class CFP_BattleDressUniform_multicam_snow : CFP_Uniform
-	{
-		displayName = "Battle Dress Uniform (Multicam Snow)";
-		uniformClass = "CFP_U_BattleDressUniform_multicam_snow";
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_multicam_snow.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_multicam_snow.paa"};
-	};
-
-	class CFP_BattleDressUniform_mtp_snow : CFP_Uniform
-	{
-		displayName = "Battle Dress Uniform (MTP Snow)";
-		uniformClass = "CFP_U_BattleDressUniform_mtp_snow";
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_mtp_snow.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_mtp_snow.paa"};
-	};
-
-	class CFP_BattleDressUniform_flecktarn_snow : CFP_Uniform
-	{
-		displayName = "Battle Dress Uniform (Flecktarn Snow)";
-		uniformClass = "CFP_U_BattleDressUniform_flecktarn_snow";
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_flecktarn_snow.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_flecktarn_snow.paa"};
 	};
 
 	class CFP_BattleDressUniform_ugandan : CFP_Uniform
@@ -472,14 +502,14 @@
 	{
 		displayName = "Battle Dress Uniform (Woodland Dark Boots)";
 		uniformClass = "CFP_U_BattleDressUniform_woodlanddark";
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_woodland.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_ana_wddark.paa"};
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_woodland.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_woodlanddark.paa"};
 	};
 
 	class CFP_BattleDressUniform_woodlandlight : CFP_Uniform
 	{
 		displayName = "Battle Dress Uniform (Woodland Light Boots)";
 		uniformClass = "CFP_U_BattleDressUniform_woodlandlight";
-		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_woodland.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_ana_wdlight.paa"};
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\uniforms\BattleDressUniform\camo\BDU_woodland.paa","\x\cfp\addons\uniforms\FieldUniform\camo\CombatUniform_woodlandlight.paa"};
 	};
 
 	class CFP_BattleDressUniform_marpatugandadark : CFP_Uniform

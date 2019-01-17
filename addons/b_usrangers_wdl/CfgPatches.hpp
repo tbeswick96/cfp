@@ -23,6 +23,7 @@ class CfgPatches {
             "CFP_B_USRANGERS_Team_Leader_WDL_01",
             "CFP_B_USRANGERS_Engineer_WDL_01",
             "CFP_B_USRANGERS_Explosive_Specialist_WDL_01",
+            "CFP_B_USRANGERS_MH_47E_WDL_01",
             "CFP_B_USRANGERS_MH_6M_MELB_WDL_01",
             "CFP_B_USRANGERS_MH_6J_Little_Bird_WDL_01",
             "CFP_B_USRANGERS_MH_6M_Recon_WDL_01",
@@ -74,6 +75,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {
+            "cfp_main",
             "A3_Characters_F",
             "cfp_uniforms",
             "CUP_AirVehicles_AH6",
@@ -90,7 +92,9 @@ class CfgPatches {
             "A3_Boat_F_Boat_Transport_01",
             "A3_Boat_F_Exp_Boat_Transport_01",
             "A3_Soft_F_Gamma_Truck_01",
-            "CUP_AirVehicles_MQ9"
+            "CUP_AirVehicles_MQ9",
+            "CUP_Creatures_StaticWeapons",
+            "CUP_Weapons_StaticWeapons"
         };
         author = "Drew";
         authors[] = {"Drew"};

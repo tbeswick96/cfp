@@ -20,7 +20,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\Black.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 		class ItemInfo: HeadgearItem
 		{
@@ -30,6 +30,198 @@ class CfgVehicleClasses
 			armor = 0;
 			passThrough = 0.30;
 			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\Black.paa"};
+			hiddenSelections[] = {"Camo"};
+		};
+	};
+
+	class CFP_BaseballCap_IASF1: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BaseballCap_Black.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Baseball Cap (Black IA SF 1)";
+		// picture = "\x\cfp\addons\headgear\BaseballCap\ui\Black.jpg";
+		model = "\x\cfp\addons\models\BaseballCap";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IASF1.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\BaseballCap";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IASF1.paa"};
+			hiddenSelections[] = {"Camo"};
+		};
+	};
+
+	class CFP_BaseballCap_IASF2: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BaseballCap_Black.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Baseball Cap (Black IA SF 2)";
+		// picture = "\x\cfp\addons\headgear\BaseballCap\ui\Black.jpg";
+		model = "\x\cfp\addons\models\BaseballCap";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IASF2.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\BaseballCap";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IASF2.paa"};
+			hiddenSelections[] = {"Camo"};
+		};
+	};
+
+	class CFP_BaseballCap_IASF3: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BaseballCap_Black.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Baseball Cap (Black IA SF 3)";
+		// picture = "\x\cfp\addons\headgear\BaseballCap\ui\Black.jpg";
+		model = "\x\cfp\addons\models\BaseballCap";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IASF3.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\BaseballCap";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IASF3.paa"};
+			hiddenSelections[] = {"Camo"};
+		};
+	};
+
+	class CFP_BaseballCap_IP1: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BaseballCap_Black.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Baseball Cap (Iraqi Police 1)";
+		// picture = "\x\cfp\addons\headgear\BaseballCap\ui\Black.jpg";
+		model = "\x\cfp\addons\models\BaseballCap";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IP1.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\BaseballCap";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IP1.paa"};
+			hiddenSelections[] = {"Camo"};
+		};
+	};
+
+	class CFP_BaseballCap_IP2: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BaseballCap_Black.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Baseball Cap (Iraqi Police 2)";
+		// picture = "\x\cfp\addons\headgear\BaseballCap\ui\Black.jpg";
+		model = "\x\cfp\addons\models\BaseballCap";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IP2.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\BaseballCap";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IP2.paa"};
+			hiddenSelections[] = {"Camo"};
+		};
+	};
+
+	class CFP_BaseballCap_IP3: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BaseballCap_Black.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Baseball Cap (Iraqi Police 3)";
+		// picture = "\x\cfp\addons\headgear\BaseballCap\ui\Black.jpg";
+		model = "\x\cfp\addons\models\BaseballCap";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IP3.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\BaseballCap";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\IP3.paa"};
+			hiddenSelections[] = {"Camo"};
+		};
+	};
+
+	class CFP_BaseballCap_ANA1: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BaseballCap_Black.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Baseball Cap (Green ANA Commando)";
+		// picture = "\x\cfp\addons\headgear\BaseballCap\ui\Black.jpg";
+		model = "\x\cfp\addons\models\BaseballCap";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\ANA1.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\BaseballCap";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\ANA1.paa"};
+			hiddenSelections[] = {"Camo"};
+		};
+	};
+
+	class CFP_BaseballCap_ANA2: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_SP_BaseballCap_Black.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Baseball Cap (Tan ANA Commando)";
+		// picture = "\x\cfp\addons\headgear\BaseballCap\ui\Black.jpg";
+		model = "\x\cfp\addons\models\BaseballCap";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\ANA2.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\BaseballCap";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\ANA2.paa"};
 			hiddenSelections[] = {"Camo"};
 		};
 	};
@@ -44,7 +236,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\Blue.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -71,7 +263,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\Green.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -98,7 +290,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\Red.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -125,7 +317,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\Tan.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -150,7 +342,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\White.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -175,7 +367,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\Yellow.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -200,7 +392,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\UN.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -224,7 +416,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\TweedCheckedBrown.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -249,7 +441,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\TweedCheckedGreen.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -274,7 +466,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\TweedCheckedGrey.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -298,7 +490,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\Hunter.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -323,7 +515,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\Hunter2.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -347,7 +539,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\ATacsFG.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -372,7 +564,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\NodUrban.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -397,7 +589,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\PoliceBlack1.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -421,7 +613,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\FBIBlack1.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -445,7 +637,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\SwatBlack1.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -470,7 +662,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\MPBlack1.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -494,7 +686,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\BaseballCap";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\BaseballCap\MPBlack2.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 

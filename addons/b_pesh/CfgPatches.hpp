@@ -23,6 +23,9 @@ class CfgPatches
             "cfp_b_pesh_HMMWV_M2",
             "cfp_b_pesh_Ural",
             "cfp_b_pesh_Ural_ZU23",
+			"cfp_b_pesh_Ural_Refuel_01",
+			"cfp_b_pesh_Ural_Repair_01",
+			"cfp_b_pesh_Ural_Ammo_01",
             "cfp_b_pesh_BRDM",
             "cfp_b_pesh_BTR60",
             "cfp_b_pesh_BMP1",
@@ -43,6 +46,7 @@ class CfgPatches
 			"PESH_uniform"
 		};
 		requiredAddons[] = {
+            "cfp_main",
 			"A3_Dubbing_Radio_F",
 			"A3_Characters_F",
 			"A3_Characters_F_Common",

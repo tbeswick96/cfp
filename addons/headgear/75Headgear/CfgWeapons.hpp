@@ -1,15 +1,16 @@
 ////////////////////////////////////OPSCORE/HELMETS////////////////////////////////////
 
 
-		class CFP_OpsC_Covered: ItemCore
+	class CFP_OpsC_Covered : ItemCore
     {
+        picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Covered.paa;
         scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Ops-Core Covered [75th]";
 		model = "\x\cfp\addons\headgear\75Headgear\ops_core_covered.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\75Headgear\tex\opscore_co.paa"};
-		author = "DaveGary/Hawaiian";
+		author = "CFP";
 
 		class ItemInfo: HeadgearItem
 		{
@@ -25,15 +26,16 @@
 		};
 	};
 
-	class CFP_OpsC_Covered_IDF: ItemCore
+	class CFP_OpsC_Covered_IDF : ItemCore
     {
+        picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Covered_IDF.paa;
         scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Ops-Core Covered [IDF]";
 		model = "\x\cfp\addons\headgear\75Headgear\ops_core_covered.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\75Headgear\tex\opscore_co_idf.paa"};
-		author = "DaveGary/Hawaiian";
+		author = "CFP";
 
 		class ItemInfo: HeadgearItem
 		{
@@ -50,11 +52,11 @@
 	};
 
 
-	class CFP_OpsC_Covered2: ItemCore {
+	class CFP_OpsC_Covered2 : ItemCore {
 
-
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Covered2.paa;
 			scope = 2;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Covered II [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_covered2.p3d";
 			hiddenSelections[] = {"camo","camo1"};
@@ -77,11 +79,13 @@
 			};
 		};
 
-		class CFP_OpsC_Covered2_IDF: ItemCore {
+		class CFP_OpsC_Covered2_IDF : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Covered2_IDF.paa;
 
 
 			scope = 2;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Covered II [IDF]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_covered2.p3d";
 			hiddenSelections[] = {"camo","camo1"};
@@ -104,12 +108,14 @@
 			};
 		};
 
-	class CFP_OpsC_Uncov_Goggles: ItemCore {
+	class CFP_OpsC_Uncov_Goggles : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Uncov_Goggles.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Uncov Goggles [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_uncov_goggles.p3d";
 			hiddenSelections[] = {""};
@@ -132,12 +138,14 @@
 			};
 		};
 
-	class CFP_OpsC_Uncov_Full: ItemCore {
+	class CFP_OpsC_Uncov_Full : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Uncov_Full.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Uncov Full [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_uncov_full.p3d";
 			hiddenSelections[] = {""};
@@ -160,12 +168,14 @@
 			};
 		};
 
-		class CFP_OpsC_Uncov_Full_IDF: ItemCore {
+		class CFP_OpsC_Uncov_Full_IDF : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Uncov_Full_IDF.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Uncov Full [IDF]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_uncov_full_idf.p3d";
 			hiddenSelections[] = {""};
@@ -188,12 +198,14 @@
 			};
 		};
 
-	class CFP_OpsC_Cov_Goggles_Off: ItemCore {
+	class CFP_OpsC_Cov_Goggles_Off : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Cov_Goggles_Off.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Cov Goggles Off [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_cov_goggles_off.p3d";
 			hiddenSelections[] = {"camo","camo1"};
@@ -216,12 +228,14 @@
 			};
 		};
 
-	class CFP_OpsC_Cov_Full: ItemCore {
+	class CFP_OpsC_Cov_Full : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Cov_Full.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Cov Goggles/Shemagh [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_cov_full.p3d";
 			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
@@ -244,12 +258,14 @@
 			};
 		};
 
-	class CFP_OpsC_Med: ItemCore {
+	class CFP_OpsC_Med : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Med.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Spec [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_cov_medic.p3d";
 			hiddenSelections[] = {"camo","camo1"};
@@ -272,12 +288,14 @@
 			};
 		};
 
-		class CFP_OpsC_Med_IDF: ItemCore {
+	class CFP_OpsC_Med_IDF : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Med_IDF.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Spec [IDF]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_cov_medic.p3d";
 			hiddenSelections[] = {"camo","camo1"};
@@ -300,12 +318,14 @@
 			};
 		};
 
-	class CFP_OpsC_Uncovered: ItemCore {
+	class CFP_OpsC_Uncovered : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Uncovered.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Uncovered [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_uncovered.p3d";
 			hiddenSelections[] = {"camo"};
@@ -328,12 +348,14 @@
 			};
 		};
 
-	class CFP_OpsC_Painted: ItemCore {
+	class CFP_OpsC_Painted : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Painted.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Painted [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_uncov_painted.p3d";
 			hiddenSelections[] = {"camo","camo1"};
@@ -356,12 +378,14 @@
 			};
 		};
 
-		class CFP_OpsC_Painted_IDF: ItemCore {
+		class CFP_OpsC_Painted_IDF : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Painted_IDF.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Painted [IDF]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_uncov_painted.p3d";
 			hiddenSelections[] = {"camo","camo1"};
@@ -384,12 +408,14 @@
 			};
 		};
 
-	class CFP_OpsC_Uncov_Goggle_Off: ItemCore {
+	class CFP_OpsC_Uncov_Goggle_Off : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Uncov_Goggle_Off.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Uncov Goggles Off [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_uncov_goggles_off.p3d";
 			hiddenSelections[] = {"camo"};
@@ -412,12 +438,14 @@
 			};
 		};
 
-	class CFP_OpsC_Uncov_Shemagh: ItemCore {
+	class CFP_OpsC_Uncov_Shemagh : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_OpsC_Uncov_Shemagh.paa;
 
 
 			scope = 2;
 			weaponPoolAvailable = 1;
-			author = "DaveGary/modifiedbyHawaiian";
+			author = "CFP";
 			displayName = "Ops-Core Uncov Shemagh [75th]";
 			model = "\x\cfp\addons\headgear\75Headgear\ops_core_uncov_shemagh.p3d";
 			hiddenSelections[] = {"camo","camo1"};
@@ -443,7 +471,9 @@
 	////////////////////////////////////RANGER/PATROL/CAPS////////////////////////////////////
 
 
-	class CFP_75th_Patrol_Cap: ItemCore {
+	class CFP_75th_Patrol_Cap : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_75th_Patrol_Cap.paa;
 
 
 			scope = 2;
@@ -463,7 +493,9 @@
 			};
 	};
 
-	class CFP_75th_Patrol_Cap_Oakleys: ItemCore {
+	class CFP_75th_Patrol_Cap_Oakleys : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_75th_Patrol_Cap_Oakleys.paa;
 
 
 			scope = 2;
@@ -488,7 +520,9 @@
 	////////////////////////////////////Itsthomas’s/BEANIES////////////////////////////////////
 
 
-	class CFP_75th_Beanie_Blk: ItemCore {
+	class CFP_75th_Beanie_Blk : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_75th_Beanie_Blk.paa;
 
 
 			scope = 2;
@@ -507,7 +541,9 @@
 						hiddenSelections[] = {"camo"};
 			};
 	};
-	class CFP_75th_Beanie_Blk2: ItemCore {
+	class CFP_75th_Beanie_Blk2 : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_75th_Beanie_Blk2.paa;
 
 
 			scope = 2;
@@ -526,7 +562,9 @@
 						hiddenSelections[] = {"camo"};
 			};
 	};
-	class CFP_75th_Beanie_Khaki: ItemCore {
+	class CFP_75th_Beanie_Khaki : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_75th_Beanie_Khaki.paa;
 
 
 			scope = 2;
@@ -545,7 +583,9 @@
 						hiddenSelections[] = {"camo"};
 			};
 	};
-	class CFP_75th_Beanie_Khaki2: ItemCore {
+	class CFP_75th_Beanie_Khaki2 : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_75th_Beanie_Khaki2.paa;
 
 
 			scope = 2;
@@ -564,7 +604,9 @@
 						hiddenSelections[] = {"camo"};
 			};
 	};
-	class CFP_75th_Beanie_Olv: ItemCore {
+	class CFP_75th_Beanie_Olv : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_75th_Beanie_Olv.paa;
 
 
 			scope = 2;
@@ -583,7 +625,9 @@
 						hiddenSelections[] = {"camo"};
 			};
 	};
-	class CFP_75th_Beanie_Olv2: ItemCore {
+	class CFP_75th_Beanie_Olv2 : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_75th_Beanie_Olv2.paa;
 
 
 			scope = 2;
@@ -602,7 +646,9 @@
 						hiddenSelections[] = {"camo"};
 			};
 	};
-	class CFP_75th_Beanie_Grn: ItemCore {
+	class CFP_75th_Beanie_Grn : ItemCore {
+
+            picture = \x\cfp\addons\headgear\data\ui\icon_CFP_75th_Beanie_Grn.paa;
 
 
 			scope = 2;

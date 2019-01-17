@@ -10,7 +10,7 @@ class CfgVehicleClasses
 	};
 };
 */
-	class SP_CVCHelmet_Black: ItemCore
+    class SP_CVCHelmet_Black: ItemCore
     {
         picture = "\x\cfp\addons\headgear\data\ui\icon_SP_CVCHelmet_Black.paa";
 		scope = 2;
@@ -20,7 +20,9 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\CVCHelmet";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\CVCHelmet\Black.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
+                ace_hearing_protection = 0.85;  // Protection against deafening (0 to 1, higher means more protection)
+                ace_hearing_lowerVolume = 0.60;  // Muffling of the sound (0 to 1, higher means more muffling)
 
 		class ItemInfo: HeadgearItem
 		{
@@ -35,7 +37,7 @@ class CfgVehicleClasses
 		};
 	};
 
-	class SP_CVCHelmet_Green: ItemCore
+    class SP_CVCHelmet_Green: ItemCore
     {
         picture = "\x\cfp\addons\headgear\data\ui\icon_SP_CVCHelmet_Green.paa";
 		scope = 2;
@@ -45,7 +47,9 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\CVCHelmet";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\CVCHelmet\Green.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
+                ace_hearing_protection = 0.85;  // Protection against deafening (0 to 1, higher means more protection)
+                ace_hearing_lowerVolume = 0.60;  // Muffling of the sound (0 to 1, higher means more muffling)
 
 
 
@@ -63,7 +67,7 @@ class CfgVehicleClasses
 		};
 	};
 
-	class SP_CVCHelmet_Tan: ItemCore
+    class SP_CVCHelmet_Tan: ItemCore
     {
         picture = "\x\cfp\addons\headgear\data\ui\icon_SP_CVCHelmet_Tan.paa";
 		scope = 2;
@@ -73,7 +77,9 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\CVCHelmet";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\CVCHelmet\Tan.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
+                ace_hearing_protection = 0.85;  // Protection against deafening (0 to 1, higher means more protection)
+                ace_hearing_lowerVolume = 0.60;  // Muffling of the sound (0 to 1, higher means more muffling)
 
 
 
@@ -89,7 +95,8 @@ class CfgVehicleClasses
 			hiddenSelections[] = {"Camo"};
 
 		};
-	};        class SP_CVCHelmet_UN: ItemCore
+	};
+    class SP_CVCHelmet_UN: ItemCore
     {
         picture = "\x\cfp\addons\headgear\data\ui\icon_SP_CVCHelmet_UN.paa";
 		scope = 2;
@@ -99,7 +106,9 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\CVCHelmet";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\CVCHelmet\UN.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
+                ace_hearing_protection = 0.85;  // Protection against deafening (0 to 1, higher means more protection)
+                ace_hearing_lowerVolume = 0.60;  // Muffling of the sound (0 to 1, higher means more muffling)
 
 
 

@@ -32,6 +32,17 @@ class CfgVehicles {
         };
     };
 
+    class CUP_B_MH47E_USA;
+    class CUP_B_MH47E_USA_OCimport_01 : CUP_B_MH47E_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_MH47E_USA_OCimport_02 : CUP_B_MH47E_USA_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+            class RightDoorGun;
+            class CoPilotObs;
+        };
+    };
+
     class CFP_B_USARMY_MH6M_USA;
     class CFP_B_USARMY_MH6M_USA_OCimport_01 : CFP_B_USARMY_MH6M_USA { scope = 0; class EventHandlers; class Turrets; };
     class CFP_B_USARMY_MH6M_USA_OCimport_02 : CFP_B_USARMY_MH6M_USA_OCimport_01 {
@@ -1032,6 +1043,37 @@ class CfgVehicles {
 
     };
 
+    class CFP_B_USSEALS_MH_47E_DES_01 : CUP_B_MH47E_USA_OCimport_02 {
+        author = "Drew";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "MH-47E";
+        side = 1;
+        faction = "CFP_B_USSEALS_DES";
+        crew = "CFP_B_USSEALS_Helicopter_Pilot_DES_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "CFP_B_USSEALS_Helicopter_Crew_DES_01"; };
+            class RightDoorGun : RightDoorGun { gunnerType = "CFP_B_USSEALS_Helicopter_Crew_DES_01"; };
+            class CoPilotObs : CoPilotObs { gunnerType = "CFP_B_USSEALS_Helicopter_Pilot_DES_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
     class CFP_B_USSEALS_UH_60M_DES_01 : CFP_B_USARMY_UH60M_US_OCimport_02 {
         editorPreview = \x\cfp\addons\b_usseals_des\data\preview\CFP_B_USSEALS_UH_60M_DES_01.JPG;
         author = "Drew";
@@ -1664,10 +1706,10 @@ class CfgVehicles {
         weapons[] = {"CUP_arifle_M4A1","CUP_hgun_M9"};
         respawnWeapons[] = {"CUP_arifle_M4A1","CUP_hgun_M9"};
 
-        magazines[] = {"CUP_20Rnd_762x51_B_SCAR","CUP_15Rnd_9x19_M9","CUP_20Rnd_762x51_B_SCAR","CUP_15Rnd_9x19_M9"};
-        respawnMagazines[] = {"CUP_20Rnd_762x51_B_SCAR","CUP_15Rnd_9x19_M9","CUP_20Rnd_762x51_B_SCAR","CUP_15Rnd_9x19_M9"};
+        magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9"};
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M4A1","","","CUP_optic_CompM4",{"CUP_20Rnd_762x51_B_SCAR",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CFP_U_FieldUniform_acu",{{"FirstAidKit",1},{"Chemlight_green",1,1},{"CUP_15Rnd_9x19_M9",3,15},{"CUP_20Rnd_762x51_B_SCAR",1,30}}},{"CFP_IOTV_Patrol",{{"FirstAidKit",1},{"SmokeShellGreen",1,1},{"SmokeShellBlue",1,1},{"SmokeShellOrange",1,1},{"Chemlight_green",1,1},{"CUP_20Rnd_762x51_B_SCAR",3,30}}},{},"H_PilotHelmetHeli_B","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","CUP_NVG_PVS7"}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M4A1","","","CUP_optic_CompM4",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CFP_U_FieldUniform_acu",{{"FirstAidKit",1},{"Chemlight_green",1,1},{"CUP_15Rnd_9x19_M9",3,15},{"CUP_30Rnd_556x45_Stanag",1,30}}},{"CFP_IOTV_Patrol",{{"SmokeShellGreen",1,1},{"SmokeShellBlue",1,1},{"SmokeShellOrange",1,1},{"Chemlight_green",1,1},{"CUP_30Rnd_556x45_Stanag",6,30}}},{},"H_PilotHelmetHeli_B","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","CFP_ANPVS15_Black"}};
 
 
         class EventHandlers : EventHandlers {
@@ -1698,16 +1740,17 @@ class CfgVehicles {
 
         uniformClass = "CFP_U_FieldUniform_acu";
 
-        linkedItems[] = {"CFP_IOTV_Patrol","H_CrewHelmetHeli_B","ItemMap","ItemRadio","ItemCompass","ItemWatch","CFP_ANPVS15_Black"};
-        respawnlinkedItems[] = {"CFP_IOTV_Patrol","H_CrewHelmetHeli_B","ItemMap","ItemRadio","ItemCompass","ItemWatch","CFP_ANPVS15_Black"};
+        linkedItems[] = {"CFP_IOTV_Patrol","CFP_SOARCREW_SKULL","ItemMap","ItemRadio","ItemCompass","ItemWatch","CFP_ANPVS15_Black"};
+        respawnlinkedItems[] = {"CFP_IOTV_Patrol","CFP_SOARCREW_SKULL","ItemMap","ItemRadio","ItemCompass","ItemWatch","CFP_ANPVS15_Black"};
 
         weapons[] = {"CUP_arifle_M4A1","CUP_hgun_M9"};
         respawnWeapons[] = {"CUP_arifle_M4A1","CUP_hgun_M9"};
 
-        magazines[] = {"CUP_20Rnd_762x51_B_SCAR","CUP_15Rnd_9x19_M9","CUP_20Rnd_762x51_B_SCAR","CUP_15Rnd_9x19_M9"};
-        respawnMagazines[] = {"CUP_20Rnd_762x51_B_SCAR","CUP_15Rnd_9x19_M9","CUP_20Rnd_762x51_B_SCAR","CUP_15Rnd_9x19_M9"};
+        magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9"};
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M4A1","","","CUP_optic_CompM4",{"CUP_20Rnd_762x51_B_SCAR",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CFP_U_FieldUniform_acu",{{"FirstAidKit",1},{"Chemlight_green",1,1},{"CUP_15Rnd_9x19_M9",3,15},{"CUP_20Rnd_762x51_B_SCAR",1,30}}},{"CFP_IOTV_Patrol",{{"SmokeShellGreen",1,1},{"SmokeShellBlue",1,1},{"SmokeShellOrange",1,1},{"Chemlight_green",1,1},{"CUP_20Rnd_762x51_B_SCAR",3,30}}},{},"H_CrewHelmetHeli_B","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","CFP_ANPVS15_Black"}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M4A1","","","CUP_optic_CompM4",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CFP_U_FieldUniform_acu",{{"FirstAidKit",1},{"Chemlight_green",1,1},{"CUP_15Rnd_9x19_M9",3,15},{"CUP_30Rnd_556x45_Stanag",1,30}}},{"CFP_IOTV_Patrol",{{"SmokeShellGreen",1,1},{"SmokeShellBlue",1,1},{"SmokeShellOrange",1,1},{"Chemlight_green",1,1},{"CUP_30Rnd_556x45_Stanag",6,30}}},{},"CFP_SOARCREW_SKULL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","CFP_ANPVS15_Black"}};
+
         randomGearProbability = 100;
 
             //SOAR Helmets

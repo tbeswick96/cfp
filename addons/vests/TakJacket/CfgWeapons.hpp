@@ -22,7 +22,7 @@ class CfgVehicleClasses
 		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\M81.paa"};
 		hiddenSelections[] = {"camo1","camo2"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -54,7 +54,7 @@ class CfgVehicleClasses
 		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\AfricanWoodland.paa"};
 		hiddenSelections[] = {"camo1","camo2"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -86,7 +86,7 @@ class CfgVehicleClasses
 		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\ChocChip.paa"};
 		hiddenSelections[] = {"camo1","camo2"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -118,7 +118,7 @@ class CfgVehicleClasses
 		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\EDRL.paa"};
 		hiddenSelections[] = {"camo1","camo2"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -150,7 +150,7 @@ class CfgVehicleClasses
 		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\Marpat.paa"};
 		hiddenSelections[] = {"camo1","camo2"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -182,7 +182,7 @@ class CfgVehicleClasses
 		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\PolygonDesert.paa"};
 		hiddenSelections[] = {"camo1","camo2"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -214,7 +214,7 @@ class CfgVehicleClasses
 		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\PolygonWoodland.paa"};
 		hiddenSelections[] = {"camo1","camo2"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -246,7 +246,103 @@ class CfgVehicleClasses
 		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\Woodland.paa"};
 		hiddenSelections[] = {"camo1","camo2"};
-		author = "AuburnAlumni";
+		author = "CFP";
+
+
+
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
+			containerClass = "Supply80";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			class HitpointsProtectionInfo
+			{
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 0;
+					passThrough = 1;
+				};
+			};
+
+		};
+	};
+
+	class CFP_TakJacket_SudanWoodland: CUP_Vest_TKI_Camo_Base
+{
+    picture = "\x\cfp\addons\vests\data\ui\icon_CFP_TakJacket_Woodland.paa";
+		scope = 2;
+		displayName = "Takistani Jacket (Sudan Woodland)";
+		// picture = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\data\ui\icon_v_jacket_03_ca.paa";
+		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\SudanWoodland.paa"};
+		hiddenSelections[] = {"camo1","camo2"};
+		author = "CFP";
+
+
+
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
+			containerClass = "Supply80";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			class HitpointsProtectionInfo
+			{
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 0;
+					passThrough = 1;
+				};
+			};
+
+		};
+	};
+
+	class CFP_TakJacket_DDPM: CUP_Vest_TKI_Camo_Base
+{
+    picture = "\x\cfp\addons\vests\data\ui\icon_CFP_TakJacket_Woodland.paa";
+		scope = 2;
+		displayName = "Takistani Jacket (DDPM)";
+		// picture = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\data\ui\icon_v_jacket_03_ca.paa";
+		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\DDPM.paa"};
+		hiddenSelections[] = {"camo1","camo2"};
+		author = "CFP";
+
+
+
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
+			containerClass = "Supply80";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			class HitpointsProtectionInfo
+			{
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 0;
+					passThrough = 1;
+				};
+			};
+
+		};
+	};
+
+	class CFP_TakJacket_OD: CUP_Vest_TKI_Camo_Base
+{
+    picture = "\x\cfp\addons\vests\data\ui\icon_CFP_TakJacket_Woodland.paa";
+		scope = 2;
+		displayName = "Takistani Jacket (OD)";
+		// picture = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\data\ui\icon_v_jacket_03_ca.paa";
+		model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_TakiInsurgents\CUP_Taki_Jacket.p3d";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\vests\TakJacket\OD.paa"};
+		hiddenSelections[] = {"camo1","camo2"};
+		author = "CFP";
 
 
 

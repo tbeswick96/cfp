@@ -20,7 +20,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Black.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 		class ItemInfo: HeadgearItem
 		{
@@ -44,7 +44,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Grey.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -70,7 +70,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Blue.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -96,7 +96,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Brown.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -122,7 +122,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Green.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -149,7 +149,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Red.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -176,7 +176,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Tan.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -203,7 +203,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Yellow.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "SP Craig";
+		author = "CFP";
 
 
 
@@ -230,7 +230,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\GreenIran.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -247,6 +247,33 @@ class CfgVehicleClasses
 		};
 	};
 
+	class CFP_Beret2_Sahrani: ItemCore
+    {
+        picture = "\x\cfp\addons\headgear\data\ui\icon_CFP_Beret2_GreenIran.paa";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Beret2 [Sahrani]";
+		// picture = "\x\cfp\addons\headgear\Beret2\ui\Green.jpg";
+		model = "\x\cfp\addons\models\Beret2";
+		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Sahrani.paa"};
+		hiddenSelections[] = {"Camo"};
+		author = "CFP";
+
+
+
+		class ItemInfo: HeadgearItem
+		{
+			mass = 15;
+			uniformmodel = "\x\cfp\addons\models\Beret2";
+			modelSides[] = {3,1};
+			armor = 0;
+			passThrough = 0.30;
+			hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\Sahrani.paa"};
+			hiddenSelections[] = {"Camo"};
+
+		};
+	};
+
 		class CFP_Beret2_RedIran: ItemCore
     {
         picture = "\x\cfp\addons\headgear\data\ui\icon_CFP_Beret2_RedIran.paa";
@@ -257,7 +284,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\RedIran.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -284,7 +311,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\GreenANA.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -311,7 +338,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\RedANA.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -338,7 +365,7 @@ class CfgVehicleClasses
 		model = "\x\cfp\addons\models\Beret2";
 		hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\GreenIranAirborne.paa"};
 		hiddenSelections[] = {"Camo"};
-		author = "AuburnAlumni";
+		author = "CFP";
 
 
 
@@ -374,29 +401,33 @@ class CfgVehicleClasses
 	    hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\ranger_beret_co.paa"};
 	};
 };
-class CFP_Ranger_Beret_1Btn: CFP_Ranger_Beret
+class CFP_Ranger_Beret_1Btn : CFP_Ranger_Beret
 {
+    picture = \x\cfp\addons\headgear\data\ui\icon_CFP_Ranger_Beret_1Btn.paa;
 
 	displayName = "Ranger Beret 1st Battalion [75th]";
 	hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\ranger_beret01_co.paa"};
 	hiddenSelectionsMaterials[] = {"\x\cfp\addons\headgear\Beret2\ranger_beret01.rvmat"};
 };
-class CFP_Ranger_Beret_2Btn: CFP_Ranger_Beret
+class CFP_Ranger_Beret_2Btn : CFP_Ranger_Beret
 {
+    picture = \x\cfp\addons\headgear\data\ui\icon_CFP_Ranger_Beret_2Btn.paa;
 
 	displayName = "Ranger Beret 2nd Battalion [75th]";
 	hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\ranger_beret02_co.paa"};
 	hiddenSelectionsMaterials[] = {"\x\cfp\addons\headgear\Beret2\ranger_beret02.rvmat"};
 };
-class CFP_Ranger_Beret_3Btn: CFP_Ranger_Beret
+class CFP_Ranger_Beret_3Btn : CFP_Ranger_Beret
 {
+    picture = \x\cfp\addons\headgear\data\ui\icon_CFP_Ranger_Beret_3Btn.paa;
 
 	displayName = "Ranger Beret 3rd Battalion [75th]";
 	hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\ranger_beret03_co.paa"};
 	hiddenSelectionsMaterials[] = {"\x\cfp\addons\headgear\Beret2\ranger_beret03.rvmat"};
 };
-class CFP_Ranger_Beret_Cmdr: CFP_Ranger_Beret
+class CFP_Ranger_Beret_Cmdr : CFP_Ranger_Beret
 {
+    picture = \x\cfp\addons\headgear\data\ui\icon_CFP_Ranger_Beret_Cmdr.paa;
 	displayName = "Ranger Beret Regimental Commander [75th]";
 	hiddenSelectionsTextures[] = {"\x\cfp\addons\headgear\Beret2\ranger_beret04_co.paa"};
 	hiddenSelectionsMaterials[] = {"\x\cfp\addons\headgear\Beret2\ranger_beret04.rvmat"};

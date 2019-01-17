@@ -17,6 +17,17 @@ class CfgVehicles {
     class B_Soldier_F_OCimport_01 : B_Soldier_F { scope = 0; class EventHandlers; };
     class B_Soldier_F_OCimport_02 : B_Soldier_F_OCimport_01 { class EventHandlers; };
 
+    class CUP_B_MH47E_USA;
+    class CUP_B_MH47E_USA_OCimport_01 : CUP_B_MH47E_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_MH47E_USA_OCimport_02 : CUP_B_MH47E_USA_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+            class RightDoorGun;
+            class CoPilotObs;
+        };
+    };
+
     class CUP_B_MH6M_USA;
     class CUP_B_MH6M_USA_OCimport_01 : CUP_B_MH6M_USA { scope = 0; class EventHandlers; class Turrets; };
     class CUP_B_MH6M_USA_OCimport_02 : CUP_B_MH6M_USA_OCimport_01 {
@@ -344,9 +355,9 @@ class CfgVehicles {
         };
     };
 
-    class CFP_B_USARMY_HMMWV_SOV_USA;
-    class CFP_B_USARMY_HMMWV_SOV_USA_OCimport_01 : CFP_B_USARMY_HMMWV_SOV_USA { scope = 0; class EventHandlers; class Turrets; };
-    class CFP_B_USARMY_HMMWV_SOV_USA_OCimport_02 : CFP_B_USARMY_HMMWV_SOV_USA_OCimport_01 {
+    class CUP_HMMWV_SOV_Base;
+    class CUP_HMMWV_SOV_Base_OCimport_01 : CUP_HMMWV_SOV_Base { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_HMMWV_SOV_Base_OCimport_02 : CUP_HMMWV_SOV_Base_OCimport_01 {
         class EventHandlers;
         class Turrets : Turrets {
             class MainTurret;
@@ -358,9 +369,9 @@ class CfgVehicles {
         };
     };
 
-    class CFP_B_USARMY_HMMWV_SOV_M2_USA;
-    class CFP_B_USARMY_HMMWV_SOV_M2_USA_OCimport_01 : CFP_B_USARMY_HMMWV_SOV_M2_USA { scope = 0; class EventHandlers; class Turrets; };
-    class CFP_B_USARMY_HMMWV_SOV_M2_USA_OCimport_02 : CFP_B_USARMY_HMMWV_SOV_M2_USA_OCimport_01 {
+    class CUP_HMMWV_SOV_M2_Base;
+    class CUP_HMMWV_SOV_M2_Base_OCimport_01 : CUP_HMMWV_SOV_M2_Base { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_HMMWV_SOV_M2_Base_OCimport_02 : CUP_HMMWV_SOV_M2_Base_OCimport_01 {
         class EventHandlers;
         class Turrets : Turrets {
             class MainTurret;
@@ -460,27 +471,27 @@ class CfgVehicles {
     class B_Helipilot_F_OCimport_01 : B_Helipilot_F { scope = 0; class EventHandlers; };
     class B_Helipilot_F_OCimport_02 : B_Helipilot_F_OCimport_01 { class EventHandlers; };
 
-    class CFP_B_USARMY_M2StaticMG_MiniTripod_US;
-    class CFP_B_USARMY_M2StaticMG_MiniTripod_US_OCimport_01 : CFP_B_USARMY_M2StaticMG_MiniTripod_US { scope = 0; class EventHandlers; class Turrets; };
-    class CFP_B_USARMY_M2StaticMG_MiniTripod_US_OCimport_02 : CFP_B_USARMY_M2StaticMG_MiniTripod_US_OCimport_01 {
+    class CUP_B_M2StaticMG_USMC;
+    class CUP_B_M2StaticMG_USMC_OCimport_01 : CUP_B_M2StaticMG_USMC { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M2StaticMG_USMC_OCimport_02 : CUP_B_M2StaticMG_USMC_OCimport_01 {
         class EventHandlers;
         class Turrets : Turrets {
             class MainTurret;
         };
     };
 
-    class CFP_B_USARMY_M2StaticMG_US;
-    class CFP_B_USARMY_M2StaticMG_US_OCimport_01 : CFP_B_USARMY_M2StaticMG_US { scope = 0; class EventHandlers; class Turrets; };
-    class CFP_B_USARMY_M2StaticMG_US_OCimport_02 : CFP_B_USARMY_M2StaticMG_US_OCimport_01 {
+   class CUP_B_M2StaticMG_MiniTripod_USMC;
+    class CUP_B_M2StaticMG_MiniTripod_USMC_OCimport_01 : CUP_B_M2StaticMG_MiniTripod_USMC { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M2StaticMG_MiniTripod_USMC_OCimport_02 : CUP_B_M2StaticMG_MiniTripod_USMC_OCimport_01 {
         class EventHandlers;
         class Turrets : Turrets {
             class MainTurret;
         };
     };
 
-    class CFP_B_USARMY_M252_US;
-    class CFP_B_USARMY_M252_US_OCimport_01 : CFP_B_USARMY_M252_US { scope = 0; class EventHandlers; class Turrets; };
-    class CFP_B_USARMY_M252_US_OCimport_02 : CFP_B_USARMY_M252_US_OCimport_01 {
+    class CUP_B_M252_USMC;
+    class CUP_B_M252_USMC_OCimport_01 : CUP_B_M252_USMC { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M252_USMC_OCimport_02 : CUP_B_M252_USMC_OCimport_01 {
         class EventHandlers;
         class Turrets : Turrets {
             class MainTurret;
@@ -489,6 +500,7 @@ class CfgVehicles {
 
 
     class CFP_B_USRANGERS_Rifleman_WDL_01 : B_Soldier_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Rifleman_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -578,6 +590,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_AA_Specialist_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_AA_Specialist_WDL_01.JPG;
 
         displayName = "AA Specialist";
 
@@ -597,6 +610,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Squad_Leader_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Squad_Leader_WDL_01.JPG;
 
         displayName = "Squad Leader";
 
@@ -616,6 +630,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Grenadier_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Grenadier_WDL_01.JPG;
 
         displayName = "Grenadier";
 
@@ -635,6 +650,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Automatic_Rifleman_WDL_01 : B_Soldier_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Automatic_Rifleman_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -704,6 +720,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Rifleman_AT_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Rifleman_AT_WDL_01.JPG;
 
         displayName = "Rifleman AT (Carl Gustav)";
 
@@ -723,6 +740,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Medic_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Medic_WDL_01.JPG;
 
         displayName = "Medic";
         attendant = 1;
@@ -745,6 +763,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Machine_Gunner_M240_WDL_01 : CFP_B_USRANGERS_Automatic_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Machine_Gunner_M240_WDL_01.JPG;
 
         displayName = "Machine Gunner [M240]";
 
@@ -764,6 +783,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Machine_Gunner_Mk_48_WDL_01 : CFP_B_USRANGERS_Automatic_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Machine_Gunner_Mk_48_WDL_01.JPG;
 
         displayName = "Machine Gunner [Mk 48]";
 
@@ -783,6 +803,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Asst_Machine_Gunner_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Asst_Machine_Gunner_WDL_01.JPG;
 
         displayName = "Asst. Machine Gunner";
 
@@ -802,6 +823,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Sniper_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Sniper_WDL_01.JPG;
 
         displayName = "Sniper (SCAR Mk17)";
 
@@ -821,6 +843,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Spotter_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Spotter_WDL_01.JPG;
 
         displayName = "Spotter";
 
@@ -840,6 +863,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Gunner_Mortar_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Gunner_Mortar_WDL_01.JPG;
 
         displayName = "Gunner (Mortar)";
 
@@ -859,6 +883,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Asst_Gunner_Mortar_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Asst_Gunner_Mortar_WDL_01.JPG;
 
         displayName = "Asst. Gunner [Mortar]";
 
@@ -878,6 +903,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Sniper_M110_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Sniper_M110_WDL_01.JPG;
 
         displayName = "Sniper [M110]";
 
@@ -897,6 +923,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Sniper_M107_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Sniper_M107_WDL_01.JPG;
 
         displayName = "Sniper [M107]";
 
@@ -916,6 +943,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Rifleman_AT_Javelin_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Rifleman_AT_Javelin_WDL_01.JPG;
 
         displayName = "Rifleman AT [Javelin]";
 
@@ -935,6 +963,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Gunner_Mk19_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Gunner_Mk19_WDL_01.JPG;
 
         displayName = "Gunner [Mk19]";
 
@@ -954,6 +983,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Asst_Gunner_Mk19_WDL_01 : CFP_B_USRANGERS_Automatic_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Asst_Gunner_Mk19_WDL_01.JPG;
 
         displayName = "Asst. Gunner [Mk19]";
 
@@ -973,6 +1003,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Team_Leader_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Team_Leader_WDL_01.JPG;
 
         displayName = "Team Leader";
 
@@ -992,6 +1023,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Engineer_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Engineer_WDL_01.JPG;
 
         displayName = "Engineer";
         engineer = 1;
@@ -1013,6 +1045,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Explosive_Specialist_WDL_01 : CFP_B_USRANGERS_Rifleman_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Explosive_Specialist_WDL_01.JPG;
 
         displayName = "Explosive Specialist";
         engineer = 1;
@@ -1033,7 +1066,39 @@ class CfgVehicles {
 
     };
 
+    class CFP_B_USRANGERS_MH_47E_WDL_01 : CUP_B_MH47E_USA_OCimport_02 {
+        author = "Drew";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "MH-47E";
+        side = 1;
+        faction = "CFP_B_USRANGERS_WDL";
+        crew = "CFP_B_USRANGERS_Helicopter_Pilot_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "CFP_B_USRANGERS_Helicopter_Crew_WDL_01"; };
+            class RightDoorGun : RightDoorGun { gunnerType = "CFP_B_USRANGERS_Helicopter_Crew_WDL_01"; };
+            class CoPilotObs : CoPilotObs { gunnerType = "CFP_B_USRANGERS_Helicopter_Pilot_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
     class CFP_B_USRANGERS_MH_6M_MELB_WDL_01 : CUP_B_MH6M_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_MH_6M_MELB_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1071,6 +1136,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_MH_6J_Little_Bird_WDL_01 : CUP_B_MH6J_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_MH_6J_Little_Bird_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1108,6 +1174,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_MH_6M_Recon_WDL_01 : CUP_B_MH6M_OBS_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_MH_6M_Recon_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1145,6 +1212,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_MH_6J_Recon_WDL_01 : CUP_B_MH6J_OBS_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_MH_6J_Recon_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1182,6 +1250,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_AH_6M_WDL_01 : CUP_B_AH6M_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_AH_6M_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1211,6 +1280,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_AH_6J_WDL_01 : CUP_B_AH6J_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_AH_6J_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1240,6 +1310,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_UH_60M_WDL_01 : CUP_B_UH60M_US_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_UH_60M_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1271,6 +1342,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_UH_60M_FFV_WDL_01 : CUP_B_UH60M_FFV_US_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_UH_60M_FFV_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1306,6 +1378,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_UH_60M_Unarmed_WDL_01 : CUP_B_UH60M_Unarmed_US_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_UH_60M_Unarmed_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1337,6 +1410,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_UH_60M_Unarmed_FFV_WDL_01 : CUP_B_UH60M_Unarmed_FFV_US_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_UH_60M_Unarmed_FFV_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1372,6 +1446,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_UH_60M_MEV_WDL_01 : CUP_B_UH60M_Unarmed_FFV_MEV_US_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_UH_60M_MEV_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1407,6 +1482,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_AH_64D_WDL_01 : CUP_B_AH64D_DL_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_AH_64D_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1436,6 +1512,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_CH_47F_WDL_01 : CUP_B_CH47F_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_CH_47F_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1468,6 +1545,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_CH_47F_VIV_WDL_01 : CUP_B_CH47F_VIV_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_CH_47F_VIV_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1499,6 +1577,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_MH_60L_DAP_4Pylons_WDL_01 : CUP_B_MH60L_DAP_4x_US_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_MH_60L_DAP_4Pylons_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1530,6 +1609,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_MH_60L_DAP_2Pylons_WDL_01 : CUP_B_MH60L_DAP_2x_US_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_MH_60L_DAP_2Pylons_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1561,6 +1641,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1126_ICV_M2_CROWS_WDL_01 : CUP_B_M1126_ICV_M2_Desert_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1126_ICV_M2_CROWS_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1592,6 +1673,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1126_ICV_M2_CROWS_Slat_WDL_01 : CUP_B_M1126_ICV_M2_Woodland_Slat_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1126_ICV_M2_CROWS_Slat_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1622,6 +1704,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1126_ICV_MK19_CROWS_WDL_01 : CUP_B_M1126_ICV_MK19_Desert_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1126_ICV_MK19_CROWS_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1653,6 +1736,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1126_ICV_MK19_CROWS_Slat_WDL_01 : CUP_B_M1126_ICV_MK19_Woodland_Slat_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1126_ICV_MK19_CROWS_Slat_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1683,6 +1767,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1130_CV_M2_CROWS_WDL_01 : CUP_B_M1130_CV_M2_Desert_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1130_CV_M2_CROWS_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1714,6 +1799,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1130_CV_M2_CROWS_Slat_WDL_01 : CUP_B_M1130_CV_M2_Woodland_Slat_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1130_CV_M2_CROWS_Slat_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1744,6 +1830,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1135_ATGMV_WDL_01 : CUP_B_M1135_ATGMV_Desert_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1135_ATGMV_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1775,6 +1862,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1135_ATGMV_Slat_WDL_01 : CUP_B_M1135_ATGMV_Woodland_Slat_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1135_ATGMV_Slat_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1805,6 +1893,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1128_MGS_WDL_01 : CUP_B_M1128_MGS_Woodland_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1128_MGS_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1835,6 +1924,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1128_MGS_Slat_WDL_01 : CUP_B_M1128_MGS_Woodland_Slat_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1128_MGS_Slat_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1865,6 +1955,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1133_MEV_WDL_01 : CUP_B_M1133_MEV_Woodland_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1133_MEV_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1895,6 +1986,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1133_MEV_Slat_WDL_01 : CUP_B_M1133_MEV_Woodland_Slat_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1133_MEV_Slat_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1924,7 +2016,8 @@ class CfgVehicles {
 
     };
 
-    class CFP_B_USRANGERS_HMMWV_SOV_Mk19_WDL_01 : CFP_B_USARMY_HMMWV_SOV_USA_OCimport_02 {
+    class CFP_B_USRANGERS_HMMWV_SOV_Mk19_WDL_01 : CUP_HMMWV_SOV_Base_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_HMMWV_SOV_Mk19_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1959,7 +2052,8 @@ class CfgVehicles {
 
     };
 
-    class CFP_B_USRANGERS_HMMWV_SOV_M2_WDL_01 : CFP_B_USARMY_HMMWV_SOV_M2_USA_OCimport_02 {
+    class CFP_B_USRANGERS_HMMWV_SOV_M2_WDL_01 : CUP_HMMWV_SOV_M2_Base_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_HMMWV_SOV_M2_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -1995,6 +2089,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1165_GMV_WDL_01 : CUP_B_M1165_GMV_WDL_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1165_GMV_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2025,6 +2120,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Polaris_DAGOR_WDL_01 : B_LSV_01_unarmed_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Polaris_DAGOR_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2059,6 +2155,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Quad_Bike_WDL_01 : B_Quadbike_01_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Quad_Bike_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2083,6 +2180,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1129_MC_MK19_CROWS_WDL_01 : CUP_B_M1129_MC_MK19_Woodland_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1129_MC_MK19_CROWS_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2113,6 +2211,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_M1129_MC_MK19_CROWS_Slat_WDL_01 : CUP_B_M1129_MC_MK19_Woodland_Slat_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M1129_MC_MK19_CROWS_Slat_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2143,6 +2242,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_A10C_Thunderbolt_II_WDL_01 : CFP_B_USARMY_A10_DYN_USA_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_A10C_Thunderbolt_II_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2168,6 +2268,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Assault_Boat_WDL_01 : B_Boat_Transport_01_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Assault_Boat_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2200,6 +2301,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_HEMTT_Repair_WDL_01 : B_Truck_01_Repair_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_HEMTT_Repair_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2224,6 +2326,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_HEMTT_Ammo_WDL_01 : B_Truck_01_ammo_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_HEMTT_Ammo_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2248,6 +2351,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_HEMTT_Fuel_WDL_01 : B_Truck_01_fuel_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_HEMTT_Fuel_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2272,6 +2376,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_MQ_9Reaper_WDL_01 : CUP_B_USMC_DYN_MQ9_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_MQ_9Reaper_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2301,6 +2406,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Crew_WDL_01 : B_Helipilot_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Crew_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2339,6 +2445,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Helicopter_Pilot_WDL_01 : B_Helipilot_F_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Helicopter_Pilot_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2378,6 +2485,7 @@ class CfgVehicles {
     };
 
     class CFP_B_USRANGERS_Helicopter_Crew_WDL_01 : CFP_B_USRANGERS_Helicopter_Pilot_WDL_01 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_Helicopter_Crew_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2425,7 +2533,8 @@ class CfgVehicles {
 
     };
 
-    class CFP_B_USRANGERS_M2_Minitripod_WDL_01 : CFP_B_USARMY_M2StaticMG_MiniTripod_US_OCimport_02 {
+    class CFP_B_USRANGERS_M2_Minitripod_WDL_01 : CUP_B_M2StaticMG_MiniTripod_USMC_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M2_Minitripod_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2433,13 +2542,9 @@ class CfgVehicles {
         side = 1;
         faction = "CFP_B_USRANGERS_WDL";
         crew = "CFP_B_USRANGERS_Rifleman_WDL_01";
-
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
         };
-
-
-
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -2454,7 +2559,8 @@ class CfgVehicles {
 
     };
 
-    class CFP_B_USRANGERS_M2_Machine_Gun_WDL_01 : CFP_B_USARMY_M2StaticMG_US_OCimport_02 {
+    class CFP_B_USRANGERS_M2_Machine_Gun_WDL_01 : CUP_B_M2StaticMG_USMC_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M2_Machine_Gun_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2462,13 +2568,9 @@ class CfgVehicles {
         side = 1;
         faction = "CFP_B_USRANGERS_WDL";
         crew = "CFP_B_USRANGERS_Rifleman_WDL_01";
-
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
         };
-
-
-
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -2483,7 +2585,8 @@ class CfgVehicles {
 
     };
 
-    class CFP_B_USRANGERS_M252_81mm_Mortar_WDL_01 : CFP_B_USARMY_M252_US_OCimport_02 {
+    class CFP_B_USRANGERS_M252_81mm_Mortar_WDL_01 : CUP_B_M252_USMC_OCimport_02 {
+        editorPreview = \x\cfp\addons\b_usrangers_wdl\data\preview\CFP_B_USRANGERS_M252_81mm_Mortar_WDL_01.JPG;
         author = "Drew";
         scope = 2;
         scopeCurator = 2;
@@ -2491,13 +2594,9 @@ class CfgVehicles {
         side = 1;
         faction = "CFP_B_USRANGERS_WDL";
         crew = "CFP_B_USRANGERS_Rifleman_WDL_01";
-
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
         };
-
-
-
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
