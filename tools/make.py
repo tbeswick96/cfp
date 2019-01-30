@@ -1507,12 +1507,17 @@ See the make.cfg file for additional build options.
 
 
 if __name__ == "__main__":
+    # Dokan
+    proc = subprocess.Popen(["D:/Dev/DokanPbo/DokanPbo/bin/Release/DokanPbo.exe", "-f", "C:/Server/Modpack/@CUP_Units/addons", "C:/Server/Modpack/@CUP_Vehicles/addons", "C:/Server/Modpack/@CUP_Weapons/addons", "-o", "F:", "-w", "D:/DokanTemp"])
+
+    while (not os.path.exists("F:")):
+        time.sleep(2)
+
+    input("hi")
     start_time = timeit.default_timer()
     main(sys.argv)
+    subprocess.call(["D:/Dev/DokanPbo/DokanPbo/bin/Release/DokanPbo.exe", "-u", "F:"])
+
     d,h,m,s = Fract_Sec(timeit.default_timer() - start_time)
     print("\nTotal Program time elapsed: {0:2}h {1:2}m {2:4.5f}s".format(h,m,s))
 
-    if ciBuild:
-        sys.exit(0)
-
-    input("Press Enter to continue...")
