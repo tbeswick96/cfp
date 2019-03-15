@@ -1,9 +1,7 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         units[] = {};
         weapons[] = {
             "CFP_75th_Beanie_Blk",
@@ -122,7 +120,7 @@ class CfgPatches
             "CFP_OPS2017_Helmet_Black2",
             "CFP_OPS2017_Helmet_Flecktarn",
             "CFP_OPS2017_Helmet_Grey",
-	    "CFP_OPS2017_Helmet_White",
+            "CFP_OPS2017_Helmet_White",
             "CFP_OPS2017_Helmet_M81",
             "CFP_OPS2017_Helmet_Multicam",
             "CFP_OPS2017_Helmet_Multicam2",
@@ -144,6 +142,14 @@ class CfgPatches
             "CFP_OpsC_Uncov_Goggles",
             "CFP_OpsC_Uncov_Shemagh",
             "CFP_OpsC_Uncovered",
+            "CFP_OpsC_Covered_PF",
+            "CFP_OpsC_Covered2_PF",
+            "CFP_OpsC_Uncov_Goggles_PF",
+            "CFP_OpsC_Uncov_Full_PF",
+            "CFP_OpsC_Cov_Goggles_Off_PF",
+            "CFP_OpsC_Cov_Full_PF",
+            "CFP_OpsC_Med_PF",
+            "CFP_OpsC_Uncov_Shemagh_PF",
             "CFP_PASGTHelmet_ACRDesert1",
             "CFP_PASGTHelmet_ACRDesert1",
             "CFP_PASGTHelmet_ACRDesert2",
@@ -289,7 +295,7 @@ class CfgPatches
             "SP_BeanieHat_Black",
             "SP_BeanieHat_Green",
             "SP_BeanieHat_Tan",
-	    "CFP_BeanieHat_White",
+            "CFP_BeanieHat_White",
             "SP_Beret2_Black",
             "SP_Beret2_Blue",
             "SP_Beret2_Brown",
@@ -480,17 +486,14 @@ class CfgPatches
             "SP_ZSH1Helmet_Tan2",
             "VSM_MICH2017_Helmet_Tan",
             "VSM_OPS2017_Helmet_Tan"
-            
+
         };
         author = MODULE_AUTHOR;
-        authors[] = {"SP Craig", "Tupolov","AuburnAlumni","VanSchmoozin"};
+        authors[] = { "SP Craig", "Tupolov", "AuburnAlumni", "VanSchmoozin", "Skinner" };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"CFP_main","CFP_Models"};
+        requiredAddons[] = { "CFP_main", "CFP_Models" };
         VERSION_CONFIG;
     };
 };
 
 #include "CfgWeapons.hpp"
-
-
-

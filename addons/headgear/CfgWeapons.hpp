@@ -54,4 +54,5 @@ class CfgWeapons {
     #include "75Headgear\CfgWeapons.hpp"
     #include "HeloHelmet\CfgWeapons.hpp"
     #include "ShemaghHead\CfgWeapons.hpp"
+    #include "Pathfinder\CfgWeapons.hpp"
 };
