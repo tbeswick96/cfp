@@ -1097,11 +1097,11 @@ See the make.cfg file for additional build options.
         print("Version in files has been changed, make sure you commit and push the updates!")
 
     try:
-        # Temporarily copy optionals_root for building. They will be removed later.
-        if (os.path.isdir(optionals_root)):
-            optionals_modules = []
-            optional_files = []
-            copy_optionals_for_building(optionals_modules,optional_files)
+        # # Temporarily copy optionals_root for building. They will be removed later.
+        # if (os.path.isdir(optionals_root)):
+        #     optionals_modules = []
+        #     optional_files = []
+        #     copy_optionals_for_building(optionals_modules,optional_files)
 
         # Get list of subdirs in make root.
         dirs = next(os.walk(module_root))[1]
@@ -1131,7 +1131,7 @@ See the make.cfg file for additional build options.
                     print_green("Created: {}".format(os.path.join(private_key_path, key_name + ".biprivatekey")))
                     print("Removing any old signature keys...")
                     purge(os.path.join(module_root, release_dir, project, "addons"), "^.*\.bisign$","*.bisign")
-                    purge(os.path.join(module_root, release_dir, project, "optionals"), "^.*\.bisign$","*.bisign")
+                    # purge(os.path.join(module_root, release_dir, project, "optionals"), "^.*\.bisign$","*.bisign")
                     purge(os.path.join(module_root, release_dir, project, "keys"), "^.*\.bikey$","*.bikey")
                 else:
                     print_error("Failed to create key!")
@@ -1415,8 +1415,8 @@ See the make.cfg file for additional build options.
 
     finally:
         copy_important_files(module_root_parent,os.path.join(release_dir, project))
-        if (os.path.isdir(optionals_root)):
-            cleanup_optionals(optionals_modules)
+        # if (os.path.isdir(optionals_root)):
+        #     cleanup_optionals(optionals_modules)
         if not version_update:
             restore_version_files()
 
