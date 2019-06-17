@@ -1513,7 +1513,6 @@ if __name__ == "__main__":
     while (not os.path.exists("F:")):
         time.sleep(2)
 
-    input("hi")
     start_time = timeit.default_timer()
     main(sys.argv)
     subprocess.call(["D:/Dev/DokanPbo/DokanPbo/bin/Release/DokanPbo.exe", "-u", "F:"])
